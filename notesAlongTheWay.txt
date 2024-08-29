@@ -1,0 +1,13 @@
+I started out by creating the html pages needed, and started to add some HTML to the homepage.
+I also need to figure out if I want to use flexbox or grid. I think I might go with grid since 
+it's newer than flexbox and has more oppurtunities since it's multidimentional. 
+I've got some odd placed graphics in my layout (thanks former self) so I think that a 
+multidimentional layout will come in handy
+
+I've learnt from the last project that it's smart to make progress notes while I'm working, it's hard to
+remember why I chose this and that, even though Im sure I'll remember it then and there when Im making the decicion. 
+Therefore I make this notesheet, so I can record my thought process along the way
+
+I have no former knowledge about CSS variables, so this will be exciting to learn more about!
+
+--nav with flexbox, rest with grid?

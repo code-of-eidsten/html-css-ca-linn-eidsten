@@ -1,0 +1,24 @@
+.container {
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: gainsboro;
+}
+.navbar{
+    background-color: aquamarine;
+}
+.logoBox{
+    background-color: lightblue;
+}
+.logoBox, img{
+    height: 200px;
+    width: 200px;
+    border: 3px solid hotpink;
+    background-color: blueviolet;
+}
+.discoverFilmsBox{
+    background-color: lightgreen;
+}
+.filmListBox{
+    background-color: lightcoral;
+}
