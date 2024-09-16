@@ -1,35 +1,55 @@
 .container {
     border: 5px solid black;
     display: grid;
-    grid-template-rows: 5;
+    height: 100vh;
+    grid-template-rows: .5fr 1fr 1.5fr 1fr .5fr;
     background-color: gainsboro;
-    grid-template-areas: "navbar"
-    "main"
+    grid-template-areas: "nav"
+    "logo"
+    "discover"
+    "purchased"
     "footer"
     ;
 }
 .navbar{
     background-color: aquamarine;
+    grid-area: nav;
 }
-.main{
+/* .main{
     background-color: cornsilk;
     border: 1px solid black;
-}
+    grid-area: main;
+} */
 .logoBox{
     background-color: lightblue;
+    grid-area: logo;
+    display: flex;
+    justify-content: right;
 }
-.logoBox, img{
-    height: 200px;
-    width: 200px;
+.logoBox > img{
+    height: 50%;
+    width: 50%;
     border: 3px solid hotpink;
-    background-color: blueviolet;
 }
 .discoverFilmsBox{
     background-color: lightgreen;
+    grid-area: discover;
+    
 }
-.purcahsedFilms{
+.discoverFilmsBox > img {
+    height: 50%;
+    width: 50%;
+}
+.purchasedFilms{
     background-color: lightcoral;
+    grid-area: purchased;
+    
+   
+    color: black;
+    -webkit-text-stroke: 0.5px #EDE59C; 
+    
 }
 .footer{
     background-color: yellow;
+    grid-area: footer;
 }
