@@ -11,3 +11,10 @@ Therefore I make this notesheet, so I can record my thought process along the wa
 I have no former knowledge about CSS variables, so this will be exciting to learn more about!
 
 --nav with flexbox, rest with grid?
+
+changed backround color and text color variables to match the figmaprototype, 
+learned that it was possible to export images from figma, 
+and did that to the buttons I created special designs for in figma, 
+so that I dont't have recreate them from scratch
+
+Started making grid template ares and placing things as correctly as possible on the homepage.

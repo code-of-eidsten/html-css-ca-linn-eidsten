@@ -1,11 +1,19 @@
 .container {
     border: 5px solid black;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 5;
     background-color: gainsboro;
+    grid-template-areas: "navbar"
+    "main"
+    "footer"
+    ;
 }
 .navbar{
     background-color: aquamarine;
+}
+.main{
+    background-color: cornsilk;
+    border: 1px solid black;
 }
 .logoBox{
     background-color: lightblue;
@@ -19,6 +27,9 @@
 .discoverFilmsBox{
     background-color: lightgreen;
 }
-.filmListBox{
+.purcahsedFilms{
     background-color: lightcoral;
+}
+.footer{
+    background-color: yellow;
 }
