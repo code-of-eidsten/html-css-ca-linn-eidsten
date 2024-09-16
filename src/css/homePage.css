@@ -59,13 +59,20 @@
 
 .menuBtn{
     background-color: #EDE59C;
+    color:#373736;
+    height: 20px;
+    width: 40px;
 }
+
 .menuItems{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     list-style-type: none;
+    z-index: 50;
+
 }
+
 .menuItem{
     color: #373736;
     background-color: #EDE59C;
@@ -73,5 +80,26 @@
     width: 30%;
     border-radius: 10px;
     margin-bottom: 3px;
-    /*CENTER THE TEXT ON THE BUTTONS*/
+    text-align: center;
+
 }
+
+.menuContainer .menuItems{
+    display:none;
+}
+
+/*hide checkbox*/
+.menuContainer input[type="checkbox"] {
+    position: absolute;
+    top: -9999px;
+   left: -9999px;
+  }
+
+  .menuContainer .menuBtn {
+    display: flex;
+    z-index: 50;
+  }
+  .menuContainer input[type="checkbox"]:checked ~ .menuItems {
+    display: flex;
+    z-index: 50;
+  }

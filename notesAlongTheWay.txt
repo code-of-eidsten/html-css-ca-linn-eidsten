@@ -19,3 +19,5 @@ so that I dont't have recreate them from scratch
 
 Started making grid template ares and placing things as correctly as possible on the homepage.
 Looking up how to use CSS variables and adding font CSS variable
+
+having some trouble centering text in the menu buttons, tried justifying content with no luck
