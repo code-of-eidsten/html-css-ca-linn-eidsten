@@ -14,6 +14,7 @@
 .navbar{
     background-color: aquamarine;
     grid-area: nav;
+    z-index: 50;
     
 }
 /* .main{
