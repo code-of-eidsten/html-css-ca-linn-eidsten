@@ -1,9 +1,16 @@
+
+body{
+    background-image: url(/assets/images/QuareEyesPopcornBKG_nologo_1.png);
+    background-size: cover;
+    border: 1px solid black;
+} 
+
 .container {
     border: 5px solid black;
     display: grid;
-    height: 100vh;
-    grid-template-rows: .5fr 1fr 1.5fr 1fr .5fr;
-    background-color: gainsboro;
+    height: 100%;
+    grid-template-rows: .5fr 1fr 1.5fr .5fr .5fr;
+    /* background-color: gainsboro; */
     grid-template-areas: "nav"
         "logo"
         "discover"
@@ -13,74 +20,30 @@
 }
 
 .navbar {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     grid-area: nav;
-
-}
-
-/* .main{
-    background-color: cornsilk;
-    border: 1px solid black;
-    grid-area: main;
-} */
-.logoBox {
-    background-color: lightblue;
-    grid-area: logo;
     display: flex;
-    justify-content: right;
 }
 
-.logoBox>img {
-    height: 50%;
-    width: 50%;
-    border: 3px solid hotpink;
+.navbar > img{
+    height: 30%;
+    position: relative;
+    top: 15%;
 }
 
-.discoverFilmsBox {
-    background-color: lightgreen;
-    grid-area: discover;
-
-}
-
-.discoverFilmsBox>img {
-    height: 50%;
-    width: 50%;
-}
-
-.purchasedFilms {
-    background-color: lightcoral;
-    grid-area: purchased;
-    color: black;
-    -webkit-text-stroke: 0.5px #EDE59C;
-
-}
-
-.footer {
-    background-color: rgb(12, 141, 66);
-    grid-area: footer;
-}
-
-.footer>img {
-    height: 50%
-}
 
 .menuBtn {
     background-color: #EDE59C;
     color: #373736;
-    height: 20px;
-    width: 40px;
+    /* height: 20px;
+    width: 40px; */
+    border-radius: 10px;
+    margin: 0;  
+    position: relative;
+    height: 3%;
+    width: 10%;
+    top: 20%; 
 }
-
-/* .menuItems{
-    display: flex;
-    flex-direction: column;
-     justify-content: center; 
-    list-style-type: none;
-    z-index: 50;
-
-} */
-
-
 
 .menuContainer {
     position: absolute;
@@ -133,13 +96,6 @@
     opacity: 1;
     z-index: 50;
 }
-.menuContainer input[type="checkbox"]:checked~.menuBrn{
-    position: absolute;
-    top: 3%;
-    right: 3%;
-}
-
-
 
 /*Hamburger icon, transforming to cross*/
 .bar1, .bar2, .bar3 {
@@ -148,6 +104,47 @@
     background-color: #333;
     margin: 2px;
   }
+
+.logoBox {
+    /* background-color: lightblue; */
+    grid-area: logo;
+    display: flex;
+    justify-content: right;
+}
+
+.logoBox>img {
+    height: 50%;
+    width: 50%;
+}
+
+.discoverFilmsBox {
+    /* background-color: lightgreen; */
+    grid-area: discover;
+
+}
+
+.discoverFilmsBox>img {
+    height: 50%;
+    width: 50%;
+}
+
+.purchasedFilms {
+    background-color: lightcoral;
+    grid-area: purchased;
+    color: black;
+    -webkit-text-stroke: 0.5px #EDE59C;
+
+}
+
+.footer {
+    background-color: rgb(12, 141, 66);
+    grid-area: footer;
+}
+
+.footer>img {
+    height: 20%
+}
+
 
   .menuContainer input[type="checkbox"]:checked~.bar1 {
     background-color: red;
