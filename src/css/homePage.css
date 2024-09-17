@@ -9,7 +9,7 @@ body{
     border: 5px solid black;
     display: grid;
     height: 100%;
-    grid-template-rows: .5fr 1fr 1.5fr .5fr .5fr;
+    grid-template-rows: .5fr 1fr 1fr .5fr .5fr;
     /* background-color: gainsboro; */
     grid-template-areas: "nav"
         "logo"
@@ -129,7 +129,6 @@ body{
 }
 
 .purchasedFilms {
-    background-color: lightcoral;
     grid-area: purchased;
     color: black;
     -webkit-text-stroke: 0.5px #EDE59C;
@@ -150,4 +149,21 @@ body{
     background-color: red;
  }
   
+ .slider {
+    /* line them up horizontally */
+    display: flex;
+    aspect-ratio: 16 /9;
+    /* allow for scrolling */
+    overflow-x: auto;
+  
+    scroll-snap-type: x mandatory;
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+  .slider > img {
+    /* make sure the width is honored */
+    flex-shrink: 0;
+    width: 50%;
+    height: auto;
+  }
   
