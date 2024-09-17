@@ -21,3 +21,16 @@ Started making grid template ares and placing things as correctly as possible on
 Looking up how to use CSS variables and adding font CSS variable
 
 having some trouble centering text in the menu buttons, tried justifying content with no luck
+
+Managed to make the menu toggle on and off using the so called
+"checkbox hack" but I had to ask for help to get the menu to not push the other elements down
+when opening. It took some fidgeting but we figured it out
+
+Adding the background image did not work when putting it onthe main container,
+had to put it on the bodytag - and then everything skewerd a bit around
+so had to fidget around a bit again.
+
+The hamburger menu lines had to be created by using 3 divs
+, and I can't seem to get the lines positioned in the center.
+
+Thinking about gathering all the navbar CSS in its own file - it's a lot.
