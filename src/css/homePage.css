@@ -5,102 +5,152 @@
     grid-template-rows: .5fr 1fr 1.5fr 1fr .5fr;
     background-color: gainsboro;
     grid-template-areas: "nav"
-    "logo"
-    "discover"
-    "purchased"
-    "footer"
+        "logo"
+        "discover"
+        "purchased"
+        "footer"
     ;
 }
-.navbar{
+
+.navbar {
     background-color: aquamarine;
     grid-area: nav;
-    z-index: 50;
-    
+
 }
+
 /* .main{
     background-color: cornsilk;
     border: 1px solid black;
     grid-area: main;
 } */
-.logoBox{
+.logoBox {
     background-color: lightblue;
     grid-area: logo;
     display: flex;
     justify-content: right;
 }
-.logoBox > img{
+
+.logoBox>img {
     height: 50%;
     width: 50%;
     border: 3px solid hotpink;
 }
-.discoverFilmsBox{
+
+.discoverFilmsBox {
     background-color: lightgreen;
     grid-area: discover;
-    
+
 }
-.discoverFilmsBox > img {
+
+.discoverFilmsBox>img {
     height: 50%;
     width: 50%;
 }
-.purchasedFilms{
+
+.purchasedFilms {
     background-color: lightcoral;
     grid-area: purchased;
     color: black;
-    -webkit-text-stroke: 0.5px #EDE59C; 
-    
+    -webkit-text-stroke: 0.5px #EDE59C;
+
 }
-.footer{
+
+.footer {
     background-color: rgb(12, 141, 66);
     grid-area: footer;
 }
 
-.footer > img {
+.footer>img {
     height: 50%
 }
 
-.menuBtn{
+.menuBtn {
     background-color: #EDE59C;
-    color:#373736;
+    color: #373736;
     height: 20px;
     width: 40px;
 }
 
-.menuItems{
+/* .menuItems{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+     justify-content: center; 
     list-style-type: none;
     z-index: 50;
 
+} */
+
+
+
+.menuContainer {
+    position: absolute;
+    top: 3%;
+    right: 3%;
 }
 
-.menuItem{
+
+.menuContainer .menuBtn {
+    display: flex;
+    position: fixed;
+    top: 3%;
+    right: 20%;
+    text-size-adjust: 100%;
+}
+
+.menuContainer .menuItems {
+    display: fixed;
+    top: 3%;
+    right: 3%;
+    width: 45%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(100%);
+
+}
+
+.menuItems>li {
     color: #373736;
     background-color: #EDE59C;
     border: 1px solid black;
-    width: 30%;
+    width: 25vw;
     border-radius: 10px;
     margin-bottom: 3px;
     text-align: center;
-
+    list-style-type: none;
 }
 
-.menuContainer .menuItems{
-    display:none;
-}
 
 /*hide checkbox*/
 .menuContainer input[type="checkbox"] {
     position: absolute;
     top: -9999px;
-   left: -9999px;
+    left: -9999px;
+}
+
+/*if checkbox is checked, show menu items*/
+.menuContainer input[type="checkbox"]:checked~.menuItems {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 50;
+}
+.menuContainer input[type="checkbox"]:checked~.menuBrn{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+
+
+/*Hamburger icon, transforming to cross*/
+.bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 2px;
   }
 
-  .menuContainer .menuBtn {
-    display: flex;
-    z-index: 50;
-  }
-  .menuContainer input[type="checkbox"]:checked ~ .menuItems {
-    display: flex;
-    z-index: 50;
-  }
+  .menuContainer input[type="checkbox"]:checked~.bar1 {
+    background-color: red;
+ }
+  
+  
