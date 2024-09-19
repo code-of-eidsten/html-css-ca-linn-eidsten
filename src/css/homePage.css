@@ -1,112 +1,29 @@
-
+* { border: 1px solid red !important; }
+html{
+    margin-bottom: -100px;
+    padding: 0;
+    overflow: hidden;
+}
 body{
-    background-image: url(/assets/images/QuareEyesPopcornBKG_nologo_1.png);
-    background-size: cover;
-    border: 1px solid black;
+  background-color: white;
+  height: 100%;
 } 
 
+
 .container {
-    border: 5px solid black;
     display: grid;
-    height: 100%;
+    height: 100vh;
     grid-template-rows: .5fr 1fr 1fr .5fr .5fr;
-    /* background-color: gainsboro; */
     grid-template-areas: "nav"
         "logo"
         "discover"
         "purchased"
         "footer"
     ;
+    background-image: url(/assets/images/QuareEyesPopcornBKG_nologo_1.png);
 }
-
-.navbar {
-    /* background-color: aquamarine; */
-    grid-area: nav;
-    display: flex;
-}
-
-.navbar > img{
-    height: 30%;
-    position: relative;
-    top: 15%;
-}
-
-
-.menuBtn {
-    background-color: #EDE59C;
-    color: #373736;
-    /* height: 20px;
-    width: 40px; */
-    border-radius: 10px;
-    margin: 0;  
-    position: relative;
-    height: 3%;
-    width: 10%;
-    top: 20%; 
-}
-
-.menuContainer {
-    position: absolute;
-    top: 3%;
-    right: 3%;
-}
-
-
-.menuContainer .menuBtn {
-    display: flex;
-    position: fixed;
-    top: 3%;
-    right: 20%;
-    text-size-adjust: 100%;
-}
-
-.menuContainer .menuItems {
-    display: fixed;
-    top: 3%;
-    right: 3%;
-    width: 45%;
-    height: auto;
-    opacity: 0;
-    transform: translateX(100%);
-
-}
-
-.menuItems>li {
-    color: #373736;
-    background-color: #EDE59C;
-    border: 1px solid black;
-    width: 25vw;
-    border-radius: 10px;
-    margin-bottom: 3px;
-    text-align: center;
-    list-style-type: none;
-}
-
-
-/*hide checkbox*/
-.menuContainer input[type="checkbox"] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
-/*if checkbox is checked, show menu items*/
-.menuContainer input[type="checkbox"]:checked~.menuItems {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 50;
-}
-
-/*Hamburger icon, transforming to cross*/
-.bar1, .bar2, .bar3 {
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-    margin: 2px;
-  }
 
 .logoBox {
-    /* background-color: lightblue; */
     grid-area: logo;
     display: flex;
     justify-content: right;
@@ -118,7 +35,6 @@ body{
 }
 
 .discoverFilmsBox {
-    /* background-color: lightgreen; */
     grid-area: discover;
 
 }
@@ -132,22 +48,20 @@ body{
     grid-area: purchased;
     color: black;
     -webkit-text-stroke: 0.5px #EDE59C;
-
 }
 
 .footer {
-    background-color: rgb(12, 141, 66);
     grid-area: footer;
+    background-color:bisque;
+    opacity: 0.8;
 }
 
 .footer>img {
-    height: 20%
+    height: 20%;
 }
 
 
-  .menuContainer input[type="checkbox"]:checked~.bar1 {
-    background-color: red;
- }
+
   
  .slider {
     /* line them up horizontally */

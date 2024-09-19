@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .5fr 2fr 2fr .5fr;
+    grid-template-areas: "nav" "faq" "ask" "footer"
+    ;
+}
+
+.navbar{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+
+.faqBox{
+    background-color: lightcoral;
+    grid-area: faq;
+}
+
+.askBox{
+    background-color: lightgreen;
+    grid-area: ask;
+}
+
+.footer{
+    background-color: darkkhaki;
+    grid-area: footer;
+}

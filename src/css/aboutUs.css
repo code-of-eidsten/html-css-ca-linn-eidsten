@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .5fr 2fr 2fr .5fr;
+    grid-template-areas: "nav" "about" "scroll" "footer"
+    ;
+}
+
+
+.navbar{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+
+.aboutBox{
+    background-color: bisque;
+    grid-area: about;
+}
+
+.scrollBox{
+    background-color: lightcoral;
+    grid-area: scroll;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    grid-area: footer;
+}

@@ -4,7 +4,7 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
-@import url("./homePage.css");
+@import url("./navBar.css");
 
 body {
   color: var(--color-primary);

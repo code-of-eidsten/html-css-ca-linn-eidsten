@@ -1,0 +1,20 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-areas: "nav" "list" "footer"
+    ;
+}
+.filmListBox{
+    background-color: cornflowerblue;
+    grid-area: list;
+}
+.navbar{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    grid-area: footer;
+}

@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-areas: "nav" "cart" "footer"
+    ;
+}
+
+
+.navbar{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+
+.inCart{
+    background-color: darkkhaki;
+    grid-area: cart;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    grid-area: footer;
+}

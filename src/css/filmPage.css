@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .5fr 2fr 1fr .5fr;
+    grid-template-areas: "nav" "info" "scroll" "footer"
+    ;
+}
+
+.navbar{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+
+.filmInfoBox{
+    background-color: lightblue;
+    grid-area: info;
+}
+
+.suggestionScroll{
+    background-color: lightgreen;
+    grid-area: scroll;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    grid-area: footer;
+}

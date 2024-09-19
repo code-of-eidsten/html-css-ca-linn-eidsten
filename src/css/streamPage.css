@@ -1,0 +1,22 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-areas: "nav" "screen" "footer"
+    ;
+}
+.navbar{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+
+/*One for portrait mode and one for landscape*/
+.streamScreen{
+    background-color:darkkhaki;
+    grid-area: screen;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    grid-area: footer;
+}

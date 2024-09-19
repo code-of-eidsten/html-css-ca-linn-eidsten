@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-areas: "nav" "success" "footer"
+    ;
+}
+
+
+.navbar{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+}
+
+.successBox{
+    background-color: darkkhaki;
+    grid-area: success;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    grid-area: footer;
+}
