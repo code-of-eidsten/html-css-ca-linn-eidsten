@@ -1,3 +1,13 @@
+*{
+    color:antiquewhite;
+    font-weight: lighter;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.heavy{
+    font-size: large;
+    font-weight: bolder;
+    color:aliceblue;
+}
 .container{
     display: grid;
     height: 100vh;
@@ -8,16 +18,33 @@
 
 
 .navbar{
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
     grid-area: nav;
 }
 
 .aboutBox{
-    background-color: bisque;
+    background-image: url(/assets/images/blkgold_filmFrame.png);
+    background-repeat:no-repeat;
+    background-size: contain;
     grid-area: about;
 }
+.aboutBox>img{
+    position: relative;
+    left: 52%;
+    bottom:24%;
+}
+.aboutText{
+    padding-left: 10%;
+    padding-top: 8%;
+    width: 80%;
+}
+.slimText{
+    margin-top: 4%;
+    width: 60%;
+}
 
-.scrollBox{
+
+.aboutScrollArea{
     background-color: lightcoral;
     grid-area: scroll;
 }
