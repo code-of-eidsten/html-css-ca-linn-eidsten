@@ -13,38 +13,39 @@ a {
     top: 15%;
 }
 
-
-.menuBtn {
-    background-color: #EDE59C;
-    color: #373736;
-    /* height: 20px;
-    width: 40px; */
-    border-radius: 10px;
-    margin: 0;  
-    position: relative;
-    height: 3%;
-    width: 10%;
-    top: 20%; 
-}
-
 .menuContainer {
     position: absolute;
-    top: 3%;
+    top: 5%;
     right: 3%;
 }
 
 
-.menuContainer .menuBtn {
+/* .menuContainer .menuBtn {
     display: flex;
     position: fixed;
     top: 3%;
     right: 20%;
     text-size-adjust: 100%;
+} */
+
+.menuBtn {
+    display: flex;
+    position: fixed;
+    top: 3%;
+    right: 15%;
+    text-size-adjust: 100%;
+    background-color: #EDE59C;
+    color: #373736;
+    border-radius: 10px;
+    margin: 0;  
+    height: 3%;
+    width: 10%;
 }
 
-.menuContainer .menuItems {
+.menuItems {
     display: fixed;
-    top: 3%;
+    position: relative;
+    top: 30%;
     right: 3%;
     width: 45%;
     height: auto;
@@ -64,6 +65,11 @@ a {
     list-style-type: none;
 }
 
+a:hover{
+    background-color: #373736;
+    color: #EDE59C;
+}
+
 
 /*hide checkbox*/
 .menuContainer input[type="checkbox"] {
@@ -79,6 +85,11 @@ a {
     z-index: 50;
 }
 
+/*Center the lines on menubutton*/
+.bars{
+    margin: auto;
+}
+
 /*Hamburger icon, transforming to cross*/
 .bar1, .bar2, .bar3 {
     width: 20px;
@@ -87,6 +98,12 @@ a {
     margin: 2px;
   }
 
-  .menuContainer input[type="checkbox"]:checked~.bar1 {
+
+
+
+
+
+
+  /* .menuContainer input[type="checkbox"]:checked~.bar1 {
     background-color: red;
- }
+ } */
