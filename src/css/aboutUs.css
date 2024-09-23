@@ -3,6 +3,9 @@
     font-weight: lighter;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+body, .container, .aboutBox, .aboutScrollArea {
+    touch-action: none;
+}
 .heavy{
     font-size: large;
     font-weight: bolder;
@@ -38,16 +41,36 @@
     padding-top: 8%;
     width: 80%;
 }
+.aboutScrollArea{
+    background-color: lightcoral;
+    grid-area: scroll;  
+}
+.scrollbox{
+    display: flex;
+    /* flex-direction: row; */
+    /* aspect-ratio: 16 / 9; */
+    overflow-y:scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    touch-action: pan-y;
+}
 .slimText{
     margin-top: 4%;
     width: 60%;
 }
-
-
-.aboutScrollArea{
-    background-color: lightcoral;
-    grid-area: scroll;
+/* .scrollableImages{
+   
+} */
+.scrollableImages > img{
+    flex-shrink: 0; 
+    /* width: 40%;
+    height: auto; */
+    margin: 1%;
+    
 }
+
+
+
 
 .footer{
     background-color: darkolivegreen;
