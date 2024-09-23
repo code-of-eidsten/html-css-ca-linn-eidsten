@@ -73,6 +73,8 @@ body, .container, .aboutBox, .aboutScrollArea {
 
 
 .footer{
-    background-color: darkolivegreen;
+    background-image: url(/assets/images/fadeBtmAboutUs.png) no-repeat;
+    background-size: 100% 100%;
+    
     grid-area: footer;
 }
