@@ -8,9 +8,8 @@ a {
 }
 
 .navbar > img{
-    height: 30%;
     position: relative;
-    top: 15%;
+    top: 50%;
 }
 
 .menuContainer {
@@ -65,7 +64,13 @@ a {
     list-style-type: none;
 }
 
-a:hover{
+.menuItems>li>img {
+    position: absolute;
+    left:72%;
+    margin: 2%;
+}
+
+.menuItems>li>a:hover{
     background-color: #373736;
     color: #EDE59C;
 }
@@ -94,7 +99,7 @@ a:hover{
 .bar1, .bar2, .bar3 {
     width: 20px;
     height: 2px;
-    background-color: #333;
+    background-color: #373736;
     margin: 2px;
   }
 

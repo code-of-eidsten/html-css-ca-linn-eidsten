@@ -1,4 +1,4 @@
-* { border: 1px solid red !important; }
+/* * { border: 1px solid red !important; } */
 
 body, html{
   background-color: white;
@@ -33,11 +33,13 @@ body, .container, .main {
     grid-area: logo;
     display: flex;
     justify-content: right;
+    margin-top: 10%;
 }
 
 .logoBox>img {
-    height: 50%;
-    width: 50%;
+    height: 80%;
+    width: 80%;
+    padding-right: 8%;
 }
 
 .discoverFilmsBox { 
@@ -46,24 +48,26 @@ body, .container, .main {
 }
 
 .discoverFilmsBox>img {
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%; 
+    padding-bottom: 20%;
 }
 
 .purchasedFilms {
     grid-area: purchased;
     color: black;
-    -webkit-text-stroke: 0.5px #EDE59C;
+    -webkit-text-stroke: 0.5px #ede59c;
 }
 
 .footer {
     grid-area: footer;
-    background-color:bisque;
-    opacity: 0.8;
+    background-color:#ede59c;
+    opacity: 0.5;
 }
 
 .footer>img {
-    height: 50%;
+    height: 40%;
+    opacity: 1;
 }
 
 .slider {
@@ -85,6 +89,6 @@ body, .container, .main {
     height: auto;
     margin: 1%;
     border-radius: 25%;
-    box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+    border: 1px solid #B78841;
   }
   
