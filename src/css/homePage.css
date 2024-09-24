@@ -16,19 +16,23 @@ body, .container, .main {
 
 .container {  
     display: grid;
-    height: 100vh;
-    grid-template-rows: .5fr 1fr 1fr .5fr .5fr;
+    height: 100%;
+    grid-template-rows: .5fr 1fr .5fr;
     grid-template-areas: 
         "nav"
-        "logo"
+        /* "logo"
         "discover"
-        "purchased"
+        "purchased" */
+        "main"
         "footer"
     ;
     background-image: url(/assets/images/QuareEyesPopcornBKG_nologo_1.png);
     
 }
 
+.main {
+    grid-area: main;
+}
 .logoBox {
     grid-area: logo;
     display: flex;
@@ -93,20 +97,22 @@ body, .container, .main {
   }
   
 
-  @media (min-width: 700px) {
+  @media (min-width: 450px) {
     .container{ 
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: .5fr 1fr 1fr .5fr .5fr;
+
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: .5fr 1fr .2fr .5fr;
         grid-template-areas: 
-            "nav nav nav"
-            "discover logo logo"
-            "discover logo logo"
-            "purchased purchased purchased"
-            "footer footer footer"
+            "nav nav"
+            "discover logo"
+            "purchased purchased"
+            "footer footer"
         ;
-    background-image: url(/assets/images/QuareEyesPopcornBKG_nologo_1.png) cover;
+    background-size: cover;
    
+    }
+    .discoverFilmsBox>img {
+        height: 100%;
+        width: 100%; 
     }
   }
