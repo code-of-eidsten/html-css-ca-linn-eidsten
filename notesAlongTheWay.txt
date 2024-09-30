@@ -34,3 +34,12 @@ The hamburger menu lines had to be created by using 3 divs
 , and I can't seem to get the lines positioned in the center.
 
 Thinking about gathering all the navbar CSS in its own file - it's a lot.
+
+navbar in its own css file, will probably do the same with footer later
+
+had some trouble with some elements disappearing as the screen size
+incrases, fixed it partly now
+
+There is appearantly no way to horizontally scroll with mousewheel
+without javascript, so I guess i for now have to use scrollbars like a pleb
+
