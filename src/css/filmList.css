@@ -1,7 +1,7 @@
 .container{
     display: grid;
     height: 100vh;
-    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: "nav" "list" "footer"
     ;
 }
@@ -10,11 +10,9 @@
     grid-area: list;
 }
 .navbar{
-    background-color: darkgoldenrod;
     grid-area: nav;
 }
 
 .footer{
-    background-color: darkolivegreen;
     grid-area: footer;
 }
