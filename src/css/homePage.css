@@ -32,6 +32,7 @@ body, .container, .main {
 .navbar{
     grid-area: nav;
 }
+
 .main {
     grid-area: main;
     overflow:hidden;
@@ -39,7 +40,6 @@ body, .container, .main {
     min-width: 100vw;
 }
 .logoBox {
-    /* grid-area: logo; */
     display: flex;
     justify-content: right;
     margin-top: 10%;
@@ -50,13 +50,8 @@ body, .container, .main {
     width: 80%;
     padding-right: 8%;
 }
-/* 
-.discoverFilmsBox { 
-    /* grid-area: discover; 
 
-} */
-
-.discoverFilmsBox>img {
+.discoverFilmsBox img {
     height: 70%;
     width: 70%; 
     padding-bottom: 20%;
@@ -64,23 +59,15 @@ body, .container, .main {
 }
 
 .purchasedFilms {
-    /* grid-area: purchased; */
     color: black;
     -webkit-text-stroke: 0.5px #ede59c;
 }
 
 .footer {
     grid-area: footer;
-    background-color:#ede59c;
-    opacity: 0.5;
-    text-align: center;
-    padding: 20px;
+
 }
 
-.footer>img {
-    height: 40%;
-    opacity: 1;
-}
 
 .slider {
     /* line them up horizontally */
@@ -94,19 +81,20 @@ body, .container, .main {
    
 }
  
-  .slider > img {
+  .slider > a > img {
     /* fex shrink make sure the width is honored */
     flex-shrink: 0;
-    width: 40%;
-    height: auto;
-    margin: 1%;
+    /* width: 40%;
+    height: auto; */
+    margin: 10px;
     border-radius: 25%;
     border: 1px solid #B78841;
     /*prevent images from getting **really** big on PC screens*/
-    max-height: 180px;
-    max-width: 145px;
+    height: 180px;
+    width: 145px;
   }
   
+
 
   @media (min-width: 450px) {
     
@@ -130,23 +118,7 @@ body, .container, .main {
     grid-row: 9 / 13;
     max-height: 230px;
 }
-
-
-/* .footer{
-    grid-row: 5 / 6;
-    grid-column: 1/10;
-
-} */
-/* .slider > img {
-  
-    flex-shrink: 0;
-    width: 20%;
-    height: 40%;
-    border-radius: 25%;
-    border: 1px solid #B78841; 
-  } */
-    
-  }
+}
 
   @media (min-width: 900px){
        
@@ -157,24 +129,19 @@ body, .container, .main {
 }
 
 .logoBox{
-    grid-column: 4 / 9;
+    grid-column: 4 / 8;
     grid-row: 1 / 7;
 }
 
 .discoverFilmsBox{
-    grid-column: 3 / 6;
+    grid-column: 2 / 5;
     grid-row: 6/ 13;
 }
 .purchasedFilms{
     grid-column: 5/13;
-    grid-row: 10 / 13;
+    grid-row: 9 / 13;
     max-height: 230px;
 }
 
-/* 
-.footer{
-    grid-row: 5 / 6;
-    grid-column: 1/10;
 
-} */
   }
