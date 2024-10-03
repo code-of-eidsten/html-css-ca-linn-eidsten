@@ -52,7 +52,6 @@ body, .container, .aboutBox, .aboutScrollArea {
 }
 .aboutScrollArea{
     background-color: lightcoral;
-    grid-area: scroll;  
 }
 .scrollbox{
     display: flex;
@@ -61,6 +60,7 @@ body, .container, .aboutBox, .aboutScrollArea {
     scroll-snap-type: y mandatory;
     touch-action: pan-y;
     padding-left: 10%;
+    height: 300px
 }
 .slimText{
     margin-top: 4%;
