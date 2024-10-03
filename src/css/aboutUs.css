@@ -14,8 +14,8 @@ body, .container, .aboutBox, .aboutScrollArea {
 .container{
     display: grid;
     height: 100vh;
-    grid-template-rows: .5fr 2fr 2fr .5fr;
-    grid-template-areas: "nav" "about" "scroll" "footer"
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "nav" "main" "footer"
     ;
 }
 
@@ -25,20 +25,29 @@ body, .container, .aboutBox, .aboutScrollArea {
     grid-area: nav;
 }
 
+.main {
+    grid-area: main;
+    overflow:hidden;
+    max-height: 80vh;
+    min-width: 100vw;
+    background-color: bisque;
+}
+
 .aboutBox{
     background-image: url(/assets/images/blkgold_filmFrame.png);
     background-repeat:no-repeat;
-    background-size: contain;
+    background-size: cover;
     grid-area: about;
+    padding-top: 11%;
+    padding-bottom: 11%;
 }
-.aboutBox>img{
-    position: relative;
-    left: 52%;
-    bottom:24%;
+.aboutBox img{
+    position: fixed;
+    left: 50%;
+    top: 22%;
 }
 .aboutText{
-    padding-left: 10%;
-    padding-top: 8%;
+    padding-left: 12%;
     width: 80%;
 }
 .aboutScrollArea{
@@ -47,8 +56,6 @@ body, .container, .aboutBox, .aboutScrollArea {
 }
 .scrollbox{
     display: flex;
-    /* flex-direction: row; */
-    /* aspect-ratio: 16 / 9; */
     overflow-y:scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
