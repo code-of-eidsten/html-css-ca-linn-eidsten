@@ -20,9 +20,6 @@ body, .container, .main {
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "nav"
-        /* "logo"
-        "discover"
-        "purchased" */
         "main"
         "footer"
     ;
@@ -37,7 +34,7 @@ body, .container, .main {
     grid-area: main;
     overflow:hidden;
     max-height: 80vh;
-    min-width: 100vw;
+    min-width: 100vw
 }
 .logoBox {
     display: flex;
@@ -54,13 +51,14 @@ body, .container, .main {
 .discoverFilmsBox img {
     height: 70%;
     width: 70%; 
-    padding-bottom: 20%;
+    /* padding-bottom: 20%; */
     
 }
 
 .purchasedFilms {
     color: black;
     -webkit-text-stroke: 0.5px #ede59c;
+    
 }
 
 .footer {
@@ -90,8 +88,9 @@ body, .container, .main {
     border-radius: 25%;
     border: 1px solid #B78841;
     /*prevent images from getting **really** big on PC screens*/
-    height: 180px;
-    width: 145px;
+    max-height: 180px;
+    max-width: 145px;
+    z-index: 1;
   }
   
 
@@ -134,7 +133,7 @@ body, .container, .main {
 }
 
 .discoverFilmsBox{
-    grid-column: 2 / 5;
+    grid-column: 2 / 6;
     grid-row: 6/ 13;
 }
 .purchasedFilms{
