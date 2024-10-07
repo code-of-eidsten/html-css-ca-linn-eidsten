@@ -1,3 +1,19 @@
+*{
+    color:var(--color-primary);
+    font-weight: lighter;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body, html{
+    /* background-color: white; */
+    height: 100%;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+  } 
+
+body, .container, .aboutBox, .aboutScrollArea {
+    touch-action: none;
+}
 .container{
     display: grid;
     height: 100vh;
@@ -5,9 +21,75 @@
     grid-template-areas: "nav" "list" "footer"
     ;
 }
+
+/*filmlistbox needs to be flex  -vertical align items, 
+grid on each filmcard to place elements*/
 .filmListBox{
     background-color: cornflowerblue;
     grid-area: list;
+    display: flex;
+    flex-direction: column;
+}
+.filmCard{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto 1fr auto ;
+    grid-template-areas: 
+        "image title title" 
+        "image director runtime"
+        "image price price" 
+        "image genre genre"
+    ;
+    background-image: url(/assets/images/blkgold_filmFrame.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 215px;
+    width: 360px;
+    margin-top: 15px;
+}
+.filmCard > img{
+    height: 195px;
+    width: 130px;
+    grid-area: image;
+    border-radius: 15%;
+    margin-top: 7px;
+    margin-left: 25px;
+}
+
+.filmTitle{
+    grid-area: title;
+    margin-top: 5%;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.filmDirector{
+    grid-area: director;
+    margin-left: 10%;
+    font-size: 12px;
+}
+.filmRuntime{
+    grid-area: runtime;
+    font-size: 12px;
+    width: 90px;
+}
+
+.filmPrice{
+    grid-area: price;
+    font-size: 12px;
+    color: antiquewhite;
+    /*adjust price to the right of its box*/
+    display: flex;
+    justify-content: right;
+    /*get price to the top of its box -- had to use margins :(*/
+    margin-bottom: 90px;
+    margin-right: 50px;
+}
+.filmGenres{
+    grid-area: genre;
+    color:lightskyblue;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 12px;
 }
 .navbar{
     grid-area: nav;
