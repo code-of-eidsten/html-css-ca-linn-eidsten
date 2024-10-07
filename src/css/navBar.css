@@ -23,7 +23,7 @@ a {
 .menuBtn {
     display: flex;
     position: fixed;
-    top: 3%;
+    top: 1%;
     right: 3%;
     text-size-adjust: 100%;
     background-color: #EDE59C;

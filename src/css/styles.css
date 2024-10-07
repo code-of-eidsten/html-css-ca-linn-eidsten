@@ -21,3 +21,10 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.backBtn{
+  height: 20px;
+  width: 50px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary)
+}

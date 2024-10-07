@@ -3,6 +3,14 @@
     font-weight: lighter;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+body, html{
+    /* background-color: white; */
+    height: 100%;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+  } 
+
 body, .container, .aboutBox, .aboutScrollArea {
     touch-action: none;
 }
@@ -14,14 +22,17 @@ body, .container, .aboutBox, .aboutScrollArea {
 .container{
     display: grid;
     height: 100vh;
+    width: 100vw;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: "nav" "main" "footer"
+    grid-template-areas: 
+        "nav" 
+        "main" 
+        "footer"
     ;
 }
 
 
 .navbar{
-    /* background-color: darkgoldenrod; */
     grid-area: nav;
 }
 
@@ -30,29 +41,37 @@ body, .container, .aboutBox, .aboutScrollArea {
     overflow:hidden;
     max-height: 80vh;
     min-width: 100vw;
-    background-color: bisque;
 }
 
 .aboutBox{
     background-image: url(/assets/images/blkgold_filmFrame.png);
     background-repeat:no-repeat;
     background-size: cover;
-    grid-area: about;
     padding-top: 11%;
-    padding-bottom: 11%;
+    /* padding-bottom: 11%; */
 }
 .aboutBox img{
-    position: fixed;
-    left: 50%;
-    top: 22%;
+    position: relative;
+    left: 55%;
+    bottom: 80px;
 }
 .aboutText{
-    padding-left: 12%;
-    width: 80%;
+    padding-left: 17%;
+    width: 90%;
 }
-.aboutScrollArea{
-    background-color: lightcoral;
+.slimText{
+    /* margin-top: 4%; */
+    width: 50%;
+    /* margin-right: 5%; */
 }
+ .aboutScrollArea{
+    /* padding-left: 5%; */
+    /* padding-bottom: 11%; */
+    background-image: url(/assets/images/blkgold_filmFrame.png);
+    background-position: right center;
+    background-size: cover;
+    
+} 
 .scrollbox{
     display: flex;
     overflow-y:scroll;
@@ -60,29 +79,76 @@ body, .container, .aboutBox, .aboutScrollArea {
     scroll-snap-type: y mandatory;
     touch-action: pan-y;
     padding-left: 10%;
-    height: 300px
+    padding-top: 3%;
+    height: 300px;
+    width: 350px;
 }
-.slimText{
-    margin-top: 4%;
-    width: 60%;
-}
-/* .scrollableImages{
-   
-} */
+
 .scrollableImages > img{
     flex-shrink: 0; 
+    width: 80%;
     /* width: 40%;
     height: auto; */
-    margin: 1%;
+    /* margin: 1%; */
     
 }
-
-
 
 
 .footer{
     background-image: url(/assets/images/fadeBtmAboutUs.png);
-    background-size: 100% 100%;
-    
+    background-position: right center;
+    background-size: cover;
     grid-area: footer;
+}
+
+@media (min-width: 450px){
+
+    .main{
+        display:grid;
+        grid-template-columns:repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .aboutBox{
+        grid-column: 1 / 6;
+        grid-row: 1/5;
+    }
+    
+    .aboutScrollArea{
+        grid-column: 6/11;
+        grid-row: 6/10;
+    }
+}
+
+@media (min-width: 900px){
+    .main{
+        display:grid;
+        grid-template-columns:repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        padding-top: 3%;    
+    }
+
+    .aboutBox{
+        grid-column: 1 / 6;
+        grid-row: 1/9;
+    }
+    
+    .aboutScrollArea{
+        grid-column: 7/12;
+        grid-row: 5/13;
+    }
+    .scrollbox{
+        height: 350px;
+        width: 450px;
+    }
+    .slimText{
+        width: 150px;
+    }
+    .footer{
+        background-image: url(/assets/images/fadeBtmAboutUs.png);
+        background-position: center;
+        background-size: cover;
+        padding-top: 10%;
+        grid-area: footer;
+    }
 }

@@ -63,6 +63,7 @@ body, .container, .main {
 
 .footer {
     grid-area: footer;
+    background-color:#ede59c;
 
 }
 
@@ -94,7 +95,6 @@ body, .container, .main {
   }
   
 
-  /*looks r*/
   @media (min-width: 450px) {
     
 .main{
