@@ -132,6 +132,21 @@ body, .container, .aboutBox, .aboutScrollArea {
         grid-column: 1 / 6;
         grid-row: 1/9;
     }
+
+    .boxHeadline{
+        padding-top: 5%;
+        font-size: 27px;
+    }
+    .heavy{
+        font-size: 30px;
+    }
+
+    .aboutBox img{
+        position: relative;
+        left: 60%;
+        top: -40px;
+        height: 35%;
+    }
     
     .aboutScrollArea{
         grid-column: 7/12;
@@ -139,10 +154,11 @@ body, .container, .aboutBox, .aboutScrollArea {
     }
     .scrollbox{
         height: 350px;
-        width: 450px;
+        width: 500px;
     }
     .slimText{
-        width: 150px;
+        width: 350%;
+        margin-left: 15%;
     }
     .footer{
         background-image: url(/assets/images/fadeBtmAboutUs.png);
