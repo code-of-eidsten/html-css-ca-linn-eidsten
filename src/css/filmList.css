@@ -22,13 +22,18 @@ body, .container, .aboutBox, .aboutScrollArea {
     ;
 }
 
-/*filmlistbox needs to be flex  -vertical align items, 
-grid on each filmcard to place elements*/
+/*filmlistbox needs to be flex  -vertical align items+scrollable, 
+&grid on each filmcard to place elements within*/
 .filmListBox{
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     grid-area: list;
     display: flex;
     flex-direction: column;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    touch-action: pan-y;
+    width: 100vw;
 }
 .filmCard{
     display: grid;
@@ -46,6 +51,7 @@ grid on each filmcard to place elements*/
     height: 215px;
     width: 360px;
     margin-top: 15px;
+    padding-bottom: 30px;
 }
 .filmCard > img{
     height: 195px;
@@ -80,7 +86,7 @@ grid on each filmcard to place elements*/
     /*adjust price to the right of its box*/
     display: flex;
     justify-content: right;
-    /*get price to the top of its box -- had to use margins :(*/
+    /*get price to the top of its box*/
     margin-bottom: 90px;
     margin-right: 50px;
 }
@@ -93,6 +99,18 @@ grid on each filmcard to place elements*/
 }
 .navbar{
     grid-area: nav;
+}
+/*special setting to place menu dropdown correctly on this page*/
+.menuItems {
+    display: fixed;
+    position: relative;
+    top: -15px;
+    right: -90%;
+    width: 45%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(100%);
+
 }
 
 .footer{

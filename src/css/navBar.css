@@ -79,7 +79,7 @@ a {
 }
 
 /*if checkbox is checked, show menu items*/
-.menuContainer input[type="checkbox"]:checked~.menuItems {
+.menuContainer > input[type="checkbox"]:checked~.menuItems {
     transform: translateX(0);
     opacity: 1;
     z-index: 50;
@@ -97,6 +97,65 @@ a {
     background-color: #373736;
     margin: 2px;
   }
+
+  .genreMenuContainer{
+    position: absolute;
+    top: 5%;
+    right: 40%;
+  }
+
+/*hide checkbox*/
+.genreMenuContainer input[type="checkbox"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/*if checkbox is checked, show genre menu items*/
+.genreMenuContainer > input[type="checkbox"]:checked~.genreMenuItems {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 50;
+}
+
+  .genreBtn{
+    display: flex;
+    position: fixed;
+    top: 1%;
+    right: 30%;
+    text-size-adjust: 100%;
+    background-color: #EDE59C;
+    color: #373736;
+    border-radius: 10px;
+    margin: 0;  
+    height: 3%;
+    width: 70px;
+    max-width: 75px;
+    align-items: center;
+    padding-left: 7px;
+  }
+
+  .genreMenuItems{
+    /* display: fixed; */
+    position: absolute;
+    top: -15px;
+    right: -65px;
+    /* width: 45%; */
+    height: auto;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .genreMenuItems>li {
+    color: #373736;
+    background-color: #EDE59C;
+    border: 1px solid black;
+    width: 25vw;
+    max-width: 108px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+    text-align: center;
+    list-style-type: none;
+}
   
   @media (max-width:360px){
     .menuBtn {
