@@ -18,15 +18,14 @@ body, .container, .aboutBox, .aboutScrollArea {
     display: grid;
     height: 100vh;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: "nav" "list" "footer"
+    grid-template-areas: "nav" "main" "footer"
     ;
 }
 
 /*filmlistbox needs to be flex  -vertical align items+scrollable, 
 &grid on each filmcard to place elements within*/
 .filmListBox{
-    /* background-color: cornflowerblue; */
-    grid-area: list;
+    grid-area: main;
     display: flex;
     flex-direction: column;
     overflow-y:scroll;
@@ -114,5 +113,48 @@ body, .container, .aboutBox, .aboutScrollArea {
 }
 
 .footer{
+    background-image: url(/assets/images/footerImg_filmList.png);
+    background-position: right center;
+    background-size: cover;
     grid-area: footer;
+}
+
+
+@media (min-width: 900px){
+/*horizontal scroll*/
+
+    .filmListBox{
+        grid-area: main;
+        /* display: flex;
+        flex-direction:row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        touch-action: pan-x;
+        width: 100vw; */
+        width:400px;
+        height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transform: rotate(-90deg);
+        transform-origin: right top;
+        scroll-snap-type: x mandatory;
+        touch-action: pan-x;
+    }
+ 
+
+ .filmCard{
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+ }
+
+    .footer{
+        background-image: url(/assets/images/footerImg_filmList.png);
+        background-position: center;
+        background-size: cover;
+        padding-top: 10%;
+        grid-area: footer;
+    }
 }
