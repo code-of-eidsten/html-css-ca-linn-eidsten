@@ -132,6 +132,8 @@ body, .container, .aboutBox, .aboutScrollArea {
         scroll-snap-type: x mandatory;
         touch-action: pan-x;
         width: 100vw;
+        height: 50vh;
+        margin-top: 120px;
         
         /*make it possible to scroll with mousewheel
          - rotate the whole filmlist box
@@ -148,21 +150,38 @@ body, .container, .aboutBox, .aboutScrollArea {
         height:100vh; */
     }
  
-
+/*Div around each card element gives chance to enlarge background without effing up content!*/
  .filmCard{
-    /* width: 200px;
-    height: 300px; */
+    grid-template-rows: repeat(12,  minmax(20px, 1fr));
+    grid-template-columns: repeat(12,  minmax(20px, 1fr));
     /*then rotate each image so it's the right way*/
     /* transform: rotate(90deg); */
     /* transform-origin: right top; */
-    margin-left: 0;
- }
+    background-image: url(/assets/images/blkgold_filmFrame_horiz.png);
+    background-size:contain;
+    background-position:center;
+    height: 260px;  
+    width: 400px; 
+    /* margin-right: 40px; */
+    
+    /* min-height:500px; */
+    border: 2px solid hotpink;  
+    /* padding: 150px; */
+
+}
+
+.filmCard > img{
+    grid-column: 1/6;
+    grid-row: 1/7;
+    margin-top: 27px;
+    margin-left: 12px;
+}
 
     .footer{
         background-image: url(/assets/images/footerImg_filmList.png);
         background-position: center;
         background-size: cover;
-        padding-top: 10%;
+        padding-top: 20%;
         grid-area: footer;
     }
 }
