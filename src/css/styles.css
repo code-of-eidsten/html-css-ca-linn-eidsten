@@ -6,7 +6,9 @@
 /* Feel free to add as many of these imports as you need */
 @import url("./navBar.css");
 
-@import url(./footer.css);
+@import url("./footer.css");
+
+@import url("./mobileViewGrid.css");
 
 
 body {

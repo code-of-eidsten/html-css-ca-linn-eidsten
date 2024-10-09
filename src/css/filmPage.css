@@ -1,27 +1,101 @@
+
 .container{
+    background-image: url("/assets/images/TopImageFilmCover.png");
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.main{ 
     display: grid;
-    height: 100vh;
-    grid-template-rows: .5fr 2fr 1fr .5fr;
-    grid-template-areas: "nav" "info" "scroll" "footer"
-    ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
-
-.navbar{
-    background-color: darkgoldenrod;
-    grid-area: nav;
+.filmCoverTop{
+   
+    grid-column: 0/13;
+    grid-row: 0/6;
 }
-
 .filmInfoBox{
-    background-color: lightblue;
-    grid-area: info;
+    /* background-color: lightblue; */
+    grid-column: 1/13;
+    grid-row: 6/10;
+    display: grid;
+    grid-template-columns: repeat(12);
+    grid-template-rows: repeat(12);
+}
+.filmTitle{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: 35px;
+    margin-top: -55px;
+}
+.director{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.runtime{
+    grid-column:6/12;
+    grid-row: 1/2;
 }
 
-.suggestionScroll{
-    background-color: lightgreen;
-    grid-area: scroll;
+.infotext{
+    grid-column: 1/12;
+    grid-row: 3/6;
 }
+.price{
+    grid-column: 6/12;
+    grid-row: 6/9;
+}
+.genres{
+    grid-column: 1/12;
+    grid-row: 9/11;
+    color:lightskyblue;
+    text-align: center;
+}
+.addToCartBtn{
+    grid-column: 12/13;
+    grid-row: 9/13;
+    background-image: url("/assets/images/AddToCartBtn.png");
+    background-size: cover;
+    height: 30px;
+    width: 45px;
+    padding: 20px;
+    margin-left: 15px;
+}
+.backBtn{
+    grid-column: 12/13;
+    grid-row: 10/12;
+    background-color: transparent;
+    margin-top: 25px;
+    height: 30px;
+    width: 75px;
+}
+
+.suggestionsBox{
+    background-color: lightgreen;
+    grid-column: 1/13;
+    grid-row: 10/12;
+    
+}
+.suggestionsScroll{
+     display: flex;
+     aspect-ratio: 16 / 9;
+     overflow-y: hidden;
+     overflow-x: auto;
+     scroll-snap-type: x mandatory;
+     touch-action: pan-x;
+}
+.suggestionsScroll > a > img {
+    flex-shrink: 0;
+    margin: 10px;
+    border-radius: 25%;
+    border: 1px solid #B78841;
+    /*prevent images from getting **really** big on PC screens*/
+    max-height: 180px;
+    max-width: 145px;
+    z-index: 1;
+  }
 
 .footer{
     background-color: darkolivegreen;
-    grid-area: footer;
+    
 }

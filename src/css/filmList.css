@@ -125,29 +125,37 @@ body, .container, .aboutBox, .aboutScrollArea {
 
     .filmListBox{
         grid-area: main;
-        /* display: flex;
+        display: flex;
         flex-direction:row;
         overflow-y: hidden;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         touch-action: pan-x;
-        width: 100vw; */
-        width:400px;
-        height: 300px;
-        overflow-y: auto;
+        width: 100vw;
+        
+        /*make it possible to scroll with mousewheel
+         - rotate the whole filmlist box
+         - make it horizontal scrollable
+        */
+        /* overflow-y: auto;
         overflow-x: hidden;
         transform: rotate(-90deg);
         transform-origin: right top;
         scroll-snap-type: x mandatory;
-        touch-action: pan-x;
+        touch-action: pan-x; */
+        /*width is now height, and height is the width after flipping it around*/
+        /* width:500px;
+        height:100vh; */
     }
  
 
  .filmCard{
-    width: 100px;
-    height: 100px;
-    transform: rotate(90deg);
-    transform-origin: right top;
+    /* width: 200px;
+    height: 300px; */
+    /*then rotate each image so it's the right way*/
+    /* transform: rotate(90deg); */
+    /* transform-origin: right top; */
+    margin-left: 0;
  }
 
     .footer{
