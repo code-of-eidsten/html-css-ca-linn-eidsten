@@ -23,7 +23,7 @@
     grid-template-rows: repeat(12);
 }
 .filmTitle{
-    grid-column: 1/4;
+    grid-column: 1/6;
     grid-row: 1/2;
     font-size: 35px;
     margin-top: -55px;
@@ -33,27 +33,29 @@
     grid-row: 1/2;
 }
 .runtime{
-    grid-column:6/12;
+    grid-column:11/13;
     grid-row: 1/2;
 }
 
 .infotext{
     grid-column: 1/12;
-    grid-row: 3/6;
+    grid-row: 4/7;
+    padding-left: 15px;
 }
 .price{
-    grid-column: 6/12;
-    grid-row: 6/9;
+    grid-column: 12/13;
+    grid-row: 6/7;
 }
 .genres{
-    grid-column: 1/12;
-    grid-row: 9/11;
+    grid-column: 1/10;
+    grid-row: 7/9;
     color:lightskyblue;
     text-align: center;
+    padding-left: 15px;
 }
 .addToCartBtn{
     grid-column: 12/13;
-    grid-row: 9/13;
+    grid-row: 8/10;
     background-image: url("/assets/images/AddToCartBtn.png");
     background-size: cover;
     height: 30px;
@@ -63,7 +65,7 @@
 }
 .backBtn{
     grid-column: 12/13;
-    grid-row: 10/12;
+    grid-row: 9/11;
     background-color: transparent;
     margin-top: 25px;
     height: 30px;
@@ -71,10 +73,8 @@
 }
 
 .suggestionsBox{
-    background-color: lightgreen;
     grid-column: 1/13;
-    grid-row: 10/12;
-    
+    grid-row: 11/12; 
 }
 .suggestionsScroll{
      display: flex;
