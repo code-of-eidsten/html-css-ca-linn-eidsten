@@ -3,28 +3,32 @@
     background-image: url("/assets/images/TopImageFilmCover.png");
     background-position:top;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 .main{ 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+   grid-template-rows: repeat(12, 1fr); 
+   height: 100vh;
+   /*gap: 20px;  Ensure there is space between grid items */
+    border:1px solid red;
+
 }
-.filmCoverTop{
+/* .filmCoverTop{
    
     grid-column: 0/13;
     grid-row: 0/6;
-}
+} */
 .filmInfoBox{
-    /* background-color: lightblue; */
-    grid-column: 1/13;
-    grid-row: 6/10;
+    grid-column: 1 / 13;
+    grid-row: 6 / 10;
     display: grid;
     grid-template-columns: repeat(12);
     grid-template-rows: repeat(12);
 }
 .filmTitle{
-    grid-column: 1/6;
-    grid-row: 1/2;
+    grid-column: 1 / 6;
+    grid-row: 1/4;
     font-size: 35px;
     margin-top: -55px;
 }
@@ -96,6 +100,93 @@
   }
 
 .footer{
-    background-color: darkolivegreen;
     
+    
+}
+@media(min-width: 400px){
+  
+.container{
+    background-image: url("/assets/images/Toy-Story-4.jpg");
+    background-size: 100vw ; 
+    max-height: 20vh;
+}  
+.main{ 
+    grid-template-columns: repeat(12, minmax(150px, 1fr));
+    grid-template-rows: repeat(12,  minmax(50px, 1fr));
+    /* height: calc(100vh - 300px); Adjust height based on layout */
+
+} 
+
+.filmInfoBox{
+    grid-column: 1/11;
+    grid-row: 3/8;
+    min-height:800px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, minmax(50px, 1fr));
+    /*overflow: visible;  Check if content is pushing out of its grid row */
+}
+ 
+.filmTitle{
+    grid-column: 1/6;
+    grid-row: 1/6;
+    font-size: 60px;
+    margin-top: -60px;
+}
+.director{
+    grid-column: 1/2.5;
+    grid-row: 1/2;
+    font-size: x-large;
+    margin-left: 10px;
+}
+.runtime{
+    grid-column:2/3;
+    grid-row: 1/2;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.infotext{
+    grid-column: 1/12;
+    grid-row: 2/3;
+    font-size: larger;
+    padding-left: 15px;
+}
+.price{
+    grid-column: 9/10;
+    grid-row: 3/4;
+    text-align: right;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+.genres{
+    grid-column: 3/8;
+    grid-row: 4/5;
+    /* text-align: center; */
+    padding-left: 15px;
+}
+ .addToCartBtn{
+    grid-column: 10/11;
+    grid-row: 3/4;
+    background-image: url("/assets/images/AddToCartBtn.png");
+    background-size: cover;
+    height: 40px;
+    width: 55px;
+    padding: 20px;
+    margin-left: 25px;
+    margin-top: 45px;
+}
+.backBtn{
+    grid-column: 10/11;
+    grid-row: 4/5;
+    background-color: transparent;
+    height: 30px;
+    width: 80px;
+}
+
+.suggestionsBox{
+    grid-column: 1/13;
+    grid-row: 9/12; 
+} 
+
 }
