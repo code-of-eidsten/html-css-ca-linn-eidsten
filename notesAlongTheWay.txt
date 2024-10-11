@@ -43,3 +43,14 @@ incrases, fixed it partly now
 There is appearantly no way to horizontally scroll with mousewheel
 without javascript, so I guess i for now have to use scrollbars like a pleb
 
+Tried to rotate the whole filmlist box, and then rotate each filmcard so it's the right way
+up, to try and make the list mousewheel scrollable in pc mode, but it got to hard and 
+I figured I'd just let the users use the scrollbar instead.
+It's hard to just use CSS to make this happen, at least for me who is struggeling just
+figuring out how to use the GRIDs and flexboxes right :')
+
+for some reason the menu items are effed up on the filmlist page now. probably
+because I've fiddled around so much trying to get the list mousewheel scrollable
+horizontally. 
+I'll make a class in filmList css file to override the navbar class one, since it's
+working on the pther pages (so far...)
