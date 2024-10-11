@@ -171,11 +171,6 @@ a {
   .genreBtn {
     left: 50%;
   }
-  /* .genreMenuContainer {
-    position: absolute;
-    top: 5%;
-    right: 35%;
-  } */
 }
 
 @media (min-width: 900px) {

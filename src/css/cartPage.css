@@ -1,23 +1,67 @@
-.container{
-    display: grid;
-    height: 100vh;
-    grid-template-rows: .5fr 2fr .5fr;
-    grid-template-areas: "nav" "cart" "footer"
-    ;
+button {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+button + button {
+  margin-left: 10px;
+}
+.navbar {
+  grid-area: nav;
 }
 
-
-.navbar{
-    background-color: darkgoldenrod;
-    grid-area: nav;
+.main {
+  /* background-color: darkkhaki; */
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "info info info"
+    "image title title"
+    "image director runtime"
+    "image quantity price"
+    "total total total"
+    "buttons buttons buttons";
+  padding-right: 5%;
+}
+.main > img {
+  height: 180px;
+  grid-area: image;
+  border: 1px solid #b78841;
+  border-radius: 25%;
+}
+.infotext {
+  grid-area: info;
 }
 
-.inCart{
-    background-color: darkkhaki;
-    grid-area: cart;
+.title {
+  grid-area: title;
+  font-size: x-large;
 }
-
-.footer{
-    background-color: darkolivegreen;
-    grid-area: footer;
+.director {
+  grid-area: director;
+}
+.runtime {
+  grid-area: runtime;
+}
+.quantity {
+  grid-area: quantity;
+}
+.price {
+  grid-area: price;
+}
+.total {
+  grid-area: total;
+  display: flex;
+  justify-content: right;
+}
+.total > span {
+  display: flex;
+  justify-self: left;
+}
+.buttons {
+  grid-area: buttons;
+  display: flex;
+  justify-content: right;
+}
+.footer {
+  grid-area: footer;
 }

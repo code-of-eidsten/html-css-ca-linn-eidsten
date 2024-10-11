@@ -1,22 +1,7 @@
-/* *{
-    color:antiquewhite;
-    font-weight: lighter;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-} */
-/* body, html{
-    height: 100%;
-    overflow: hidden;
-    margin:0;
-    padding:0;
-  }  */
-
-/* body, .container, .aboutBox, .aboutScrollArea {
-    touch-action: none;
-} */
-.heavy{
-    font-size: large;
-    font-weight: bolder;
-    color:aliceblue;
+.heavy {
+  font-size: large;
+  font-weight: bolder;
+  color: aliceblue;
 }
 /* .container{
     display: grid;
@@ -30,140 +15,135 @@
     ;
 } */
 
-
-.navbar{
-    grid-area: nav;
+.navbar {
+  grid-area: nav;
 }
 
 .main {
-    grid-area: main;
-    overflow:hidden;
-    max-height: 80vh;
-    min-width: 100vw;
+  grid-area: main;
+  overflow: hidden;
+  max-height: 80vh;
+  min-width: 100vw;
 }
 
-.aboutBox{
-    background-image: url(/assets/images/blkgold_filmFrame.png);
-    background-repeat:no-repeat;
-    background-size: cover;
-    padding-top: 11%;
-    /* padding-bottom: 11%; */
+.aboutBox {
+  background-image: url(/assets/images/blkgold_filmFrame.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 11%;
+  /* padding-bottom: 11%; */
 }
-.aboutBox img{
-    position: relative;
-    left: 55%;
-    bottom: 80px;
+.aboutBox img {
+  position: relative;
+  left: 55%;
+  bottom: 80px;
 }
-.aboutText{
-    padding-left: 17%;
-    width: 90%;
+.aboutText {
+  padding-left: 17%;
+  width: 90%;
 }
-.slimText{
-    /* margin-top: 4%; */
-    width: 50%;
-    /* margin-right: 5%; */
+.slimText {
+  /* margin-top: 4%; */
+  width: 50%;
+  /* margin-right: 5%; */
 }
- .aboutScrollArea{
-    /* padding-left: 5%; */
-    /* padding-bottom: 11%; */
-    background-image: url(/assets/images/blkgold_filmFrame.png);
-    background-position: right center;
-    background-size: cover;
-    
-} 
-.scrollbox{
-    display: flex;
-    overflow-y:scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-    touch-action: pan-y;
-    padding-left: 10%;
-    padding-top: 3%;
-    height: 300px;
-    width: 350px;
+.aboutScrollArea {
+  /* padding-left: 5%; */
+  /* padding-bottom: 11%; */
+  background-image: url(/assets/images/blkgold_filmFrame.png);
+  background-position: right center;
+  background-size: cover;
+}
+.scrollbox {
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  touch-action: pan-y;
+  padding-left: 10%;
+  padding-top: 3%;
+  height: 300px;
+  width: 350px;
 }
 
-.scrollableImages > img{
-    flex-shrink: 0; 
-    width: 80%;
-    /* width: 40%;
+.scrollableImages > img {
+  flex-shrink: 0;
+  width: 80%;
+  /* width: 40%;
     height: auto; */
-    /* margin: 1%; */
-    
+  /* margin: 1%; */
 }
 
+.footer {
+  background-image: url(/assets/images/fadeBtmAboutUs.png);
+  background-position: right center;
+  background-size: cover;
+  grid-area: footer;
+}
 
-.footer{
+@media (min-width: 450px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .aboutBox {
+    grid-column: 1 / 6;
+    grid-row: 1/5;
+  }
+
+  .aboutScrollArea {
+    grid-column: 6/11;
+    grid-row: 6/10;
+  }
+}
+
+@media (min-width: 900px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding-top: 3%;
+  }
+
+  .aboutBox {
+    grid-column: 1 / 6;
+    grid-row: 1/9;
+  }
+
+  .boxHeadline {
+    padding-top: 5%;
+    font-size: 27px;
+  }
+  .heavy {
+    font-size: 30px;
+  }
+
+  .aboutBox img {
+    position: relative;
+    left: 60%;
+    top: -40px;
+    height: 35%;
+  }
+
+  .aboutScrollArea {
+    grid-column: 7/12;
+    grid-row: 5/13;
+  }
+  .scrollbox {
+    height: 350px;
+    width: 500px;
+  }
+  .slimText {
+    width: 350%;
+    margin-left: 15%;
+  }
+  .footer {
     background-image: url(/assets/images/fadeBtmAboutUs.png);
-    background-position: right center;
+    background-position: center;
     background-size: cover;
+    padding-top: 10%;
     grid-area: footer;
-}
-
-@media (min-width: 450px){
-
-    .main{
-        display:grid;
-        grid-template-columns:repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-    }
-
-    .aboutBox{
-        grid-column: 1 / 6;
-        grid-row: 1/5;
-    }
-    
-    .aboutScrollArea{
-        grid-column: 6/11;
-        grid-row: 6/10;
-    }
-}
-
-@media (min-width: 900px){
-    .main{
-        display:grid;
-        grid-template-columns:repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        padding-top: 3%;    
-    }
-
-    .aboutBox{
-        grid-column: 1 / 6;
-        grid-row: 1/9;
-    }
-
-    .boxHeadline{
-        padding-top: 5%;
-        font-size: 27px;
-    }
-    .heavy{
-        font-size: 30px;
-    }
-
-    .aboutBox img{
-        position: relative;
-        left: 60%;
-        top: -40px;
-        height: 35%;
-    }
-    
-    .aboutScrollArea{
-        grid-column: 7/12;
-        grid-row: 5/13;
-    }
-    .scrollbox{
-        height: 350px;
-        width: 500px;
-    }
-    .slimText{
-        width: 350%;
-        margin-left: 15%;
-    }
-    .footer{
-        background-image: url(/assets/images/fadeBtmAboutUs.png);
-        background-position: center;
-        background-size: cover;
-        padding-top: 10%;
-        grid-area: footer;
-    }
+  }
 }
