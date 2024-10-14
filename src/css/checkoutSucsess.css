@@ -1,23 +1,45 @@
-.container{
+
+.main{
+    grid-area: main;
     display: grid;
-    height: 100vh;
-    grid-template-rows: .5fr 2fr .5fr;
-    grid-template-areas: "nav" "success" "footer"
+    grid-template-areas: 
+    "header"
+    "info"
+    "image"
+    "back"
     ;
+    color: var(--color-primary);
+    margin-left: 20px;
 }
-
-
-.navbar{
-    background-color: darkgoldenrod;
-    grid-area: nav;
+.header{
+    grid-area: header;
 }
-
-.successBox{
-    background-color: darkkhaki;
-    grid-area: success;
+.info{
+    grid-area: info;
+    margin-top: -80px;
 }
-
+.info > a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-size: large;
+}
+.info>a:hover{
+    color: blueviolet;
+    background-color: red;
+}
+.main > img{
+    height: 180px;
+    grid-area: image;
+    border: 1px solid #b78841;
+    border-radius: 25%;
+    margin-top: -90px;
+    margin-left: 20px;
+}
+.back{
+    grid-area: back;
+    text-align: right;
+    margin-top: -80px;
+}
 .footer{
-    background-color: darkolivegreen;
     grid-area: footer;
 }
