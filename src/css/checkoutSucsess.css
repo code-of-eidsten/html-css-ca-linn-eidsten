@@ -17,6 +17,7 @@
 .info{
     grid-area: info;
     margin-top: -80px;
+    margin-right: 25px;
 }
 .info > a {
     color: var(--color-primary);
@@ -24,8 +25,8 @@
     font-size: large;
 }
 .info>a:hover{
-    color: blueviolet;
-    background-color: red;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 .main > img{
     height: 180px;
@@ -39,7 +40,36 @@
     grid-area: back;
     text-align: right;
     margin-top: -80px;
+    height: fit-content;
+    margin-right: 25px;
 }
 .footer{
     grid-area: footer;
+    background-image: url(/assets/images/cartFooterImg.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 25%;
+}
+
+@media (min-width: 600px){
+  .main{
+    padding-left: 30%;
+  }
+  .header{
+    font-size: 40px;
+  }
+  .info{
+    font-size: x-large;
+    padding-top: 5%;
+  }
+  .info > a{
+    font-size: x-large;
+  }
+  .main > img{
+    margin-top: 5%;
+  }
+  .back{
+    margin-right: 55%;
+    margin-top: -17px;
+  }
 }
