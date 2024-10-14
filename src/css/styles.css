@@ -24,9 +24,9 @@ body {
   text-align: center;
 }
 
-.backBtn{
+.standardBtn{
   height: 20px;
   width: 50px;
   background-color: var(--color-primary);
-  color: var(--color-secondary)
+  color: var(--color-secondary);
 }

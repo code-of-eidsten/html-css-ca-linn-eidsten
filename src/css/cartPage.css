@@ -2,15 +2,20 @@ button {
   background-color: var(--color-primary);
   color: var(--color-secondary);
 }
+/*if there is two buttons next to eachother, space them apart with a margin:)*/
 button + button {
   margin-left: 10px;
 }
 .navbar {
   grid-area: nav;
 }
+*{
+  /*For some unknown reason, font color from styles.css
+  doesn't show up - adding it here*/
+  color: var(--color-primary);
+}
 
 .main {
-  /* background-color: darkkhaki; */
   grid-area: main;
   display: grid;
   grid-template-areas:
@@ -19,7 +24,7 @@ button + button {
     "image director runtime"
     "image quantity price"
     "total total total"
-    "buttons buttons buttons";
+    ". . buttons";
   padding-right: 5%;
 }
 .main > img {
@@ -30,35 +35,123 @@ button + button {
 }
 .infotext {
   grid-area: info;
+  align-self: center;
+  text-align: center;
+  margin-left: -50px;
+  margin-bottom: -20px;
 }
 
 .title {
   grid-area: title;
   font-size: x-large;
+  text-align: center;
 }
 .director {
   grid-area: director;
+  width:max-content;
+  margin-top: -80px;
+  margin-left: 10px;
 }
 .runtime {
   grid-area: runtime;
+  text-align: right;
+  margin-top: -80px;
+  margin-right: 25px;
 }
 .quantity {
   grid-area: quantity;
+  margin-top: -130px;
+  color: antiquewhite;
+}
+.quantityTxt{
+  margin-left: 7px;
+  color: antiquewhite;
+}
+.quantityBtns{
+  margin-right: -63px;
+  margin-top: -23px;
+  text-align: right;
+}
+.quantityBtn{
+  width: 20px;
+  border-radius: 25%;
 }
 .price {
   grid-area: price;
+  color: antiquewhite;
+  margin-top: -130px;
+  margin-left: 95px;
 }
 .total {
   grid-area: total;
   display: flex;
   justify-content: right;
+  color: antiquewhite;
+  margin-top: -130px;
+  margin-right: 25px;
 }
 
 .buttons {
   grid-area: buttons;
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  margin-top: -80px;
 }
 .footer {
   grid-area: footer;
+  background-image: url(/assets/images/cartFooterImg.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 25%;
+}
+
+@media(min-width: 600px){
+  .main{
+    grid-template-columns: repeat(12, minmax(150px, 1fr));
+    grid-template-rows: repeat(12,  minmax(50px, 1fr))
+  }
+
+  .infotext{
+    grid-column: 2 / 6;
+    grid-row: 1/2;
+    font-size: xx-large;
+    margin-top: 50px;
+  }
+  .main > img{
+    grid-column: 2 / 6;
+    grid-row: 3/6;
+  }
+  .title{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    font-size: xx-large;
+  }
+  .director{
+    grid-column: 3/4;
+    grid-row: 5/6;
+    margin-top: -60px;
+  }
+  .runtime{
+    grid-column: 4/5;
+    grid-row: 5/6;
+    margin-top: -60px;
+  }
+  .quantity{
+    grid-column: 3/4;
+    grid-row: 7/8;
+  }
+  .price{
+    grid-column: 4/5;
+    grid-row: 7/8;
+  }
+ 
+  .total{
+    grid-column: 1/5;
+    grid-row: 9/10;
+  }
+  .buttons{
+    grid-column: 4/5;
+    grid-row: 9/10;
+  }
+ 
 }
