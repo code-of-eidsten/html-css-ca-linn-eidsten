@@ -1,27 +1,84 @@
-.container{
-    display: grid;
-    height: 100vh;
-    grid-template-rows: .5fr 2fr 2fr .5fr;
-    grid-template-areas: "nav" "faq" "ask" "footer"
-    ;
-}
 
-.navbar{
+
+/* .navbar{
     background-color: darkgoldenrod;
     grid-area: nav;
+} */
+ h3, p{
+    margin: 0;
+ }
+ p{
+    padding-bottom: 20px;
+ }
+.main{
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "faq"
+    "ask"
+    ;
+    border: 1px solid red;
 }
-
 .faqBox{
-    background-color: lightcoral;
     grid-area: faq;
+    background-image: url(/assets/images/FilmFrame_whiteBg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 350px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+.faqScroll{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    touch-action: pan-y;
+    padding: 7% 10% 5%;
+    height: 200px;
+    color: var(--color-secondary)
 }
 
 .askBox{
-    background-color: lightgreen;
+    color: antiquewhite;
     grid-area: ask;
 }
+.askForm{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/images/ContactFormBkg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 350px;
+    height: 500px;  
+}
+.inputBox{
+    background-color: #E8F1EC;
+    border: 0;
+    border-bottom: 1px solid var(--color-secondary);
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.submitBtn{
+    width: 250px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-bottom: 0;
+    border-radius: 10%;
+    margin-left: 50px;
+    font-weight:400;
+    font-size: large;
+    box-shadow: 2px 2px 5px lightblue;
+}
+input:focus,
+textarea:focus {
+    outline:none;
+    border-color: transparent;
+    border-bottom: 2px solid #b78841;
+}
 
-.footer{
+/* .footer{
     background-color: darkkhaki;
     grid-area: footer;
-}
+} */

@@ -67,9 +67,15 @@
   }
   .main > img{
     margin-top: 5%;
+    height: 270px;
   }
   .back{
     margin-right: 55%;
     margin-top: -17px;
+  }
+}
+@media(min-width: 1800px){
+  .footer{
+    padding-top: 21%;
   }
 }
