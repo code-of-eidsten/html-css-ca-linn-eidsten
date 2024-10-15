@@ -4,9 +4,36 @@
     opacity: 0.5;
     text-align: center;
     padding: 20px;
+    display:flex;
 }
 
 .footer>img {
     height: 40%;
     opacity: 1;
+}
+.followTxt{
+margin-top: -45px;
+}
+.heavy{
+    font-weight: bolder;
+    font-size: larger;
+}
+.soMeBtns{
+    margin-left: -100px;
+    margin-top: -15px;
+}
+.footerBtn{
+background-color: var(--color-primary);
+color: var(--color-secondary);
+height: 20px;
+width: 90px;
+border-radius: 15%;
+margin-bottom: 5px;
+padding-bottom: 10px;
+}
+.footerBtns{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: -210px;
 }
