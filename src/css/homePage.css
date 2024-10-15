@@ -23,7 +23,7 @@ body, .container, .main {
         "main"
         "footer"
     ;
-    background-image: url(https://ibb.co/L13C4J7);
+    background-image: url('https://ibb.co/L13C4J7');
     /* background-image: var(--background-img); */
     background-size: cover;
 }
