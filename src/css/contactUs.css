@@ -1,9 +1,4 @@
 
-
-/* .navbar{
-    background-color: darkgoldenrod;
-    grid-area: nav;
-} */
  h3, p{
     margin: 0;
  }
@@ -49,8 +44,8 @@
     background-image: url(/assets/images/ContactFormBkg.png);
     background-repeat: no-repeat;
     background-size:contain;
-    width: 350px;
-    height: 500px;  
+    min-width: 350px;
+    min-height: 500px;  
 }
 .inputBox{
     background-color: #E8F1EC;
@@ -59,6 +54,7 @@
     width: 250px;
     margin-left: 50px;
     margin-top: 20px;
+    resize: none;   
 }
 .submitBtn{
     width: 250px;
@@ -78,7 +74,64 @@ textarea:focus {
     border-bottom: 2px solid #b78841;
 }
 
-/* .footer{
-    background-color: darkkhaki;
-    grid-area: footer;
-} */
+.footer{
+    background-image: url(/assets/images/contactPageFooter.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: -10%;
+    z-index: -5;
+}
+
+@media (min-width: 580px ){
+    .faqBox{
+        height:50%;
+        width: 60%;
+        max-width: 700px;
+        max-height: 450px;
+    }
+    .faqScroll{
+        height: 90%;
+        padding: 5% 10% 5%;
+        max-width: 620px;
+        margin-top: 25px;
+    }
+    .askBox{
+        height: 80%;
+        width: 80%;
+        border: 1px solid red;
+        max-width: 700px;
+        max-height: 450px;
+        margin-left: 35%;
+        margin-bottom: 10px;
+        
+    }
+    .askForm{
+        height: 40%;
+        width: 40%;
+        /*brin it on top of footer*/
+        position:absolute;
+        z-index: 10;
+        max-width: 620px;
+        max-height: 500px;
+    }
+
+    .inputBox{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+    .submitBtn{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .askBox{
+        margin-left: 50%;
+    }
+    h3{
+        font-size: xx-large;
+    }
+}
