@@ -106,7 +106,7 @@
 @media(min-width: 400px){
   
 .container{
-    background-image: url("/assets/images/Toy-Story-4.jpg");
+    background-image: var(--background-img);
     background-size: 100vw ; 
     max-height: 20vh;
 }  
