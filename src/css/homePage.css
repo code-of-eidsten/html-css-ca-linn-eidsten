@@ -23,7 +23,7 @@ body, .container, .main {
         "main"
         "footer"
     ;
-    background-image: url(/assets/images/QuareEyesPopcornBKG_nologo_1.png);
+    background-image: url(./assets/images/QuareEyesPopcornBKG_nologo_1.png);
     background-size: cover;
 }
 .navbar{
