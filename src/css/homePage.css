@@ -23,7 +23,8 @@ body, .container, .main {
         "main"
         "footer"
     ;
-    background-image: url('https://ibb.co/L13C4J7');
+    
+    background-image: url('https://i.ibb.co/jDSL7WX/Quare-Eyes-Popcorn-BKG-nologo-1.png');
     /* background-image: var(--background-img); */
     background-size: cover;
 }
