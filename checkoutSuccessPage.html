@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar"> <a href="homePage.html"><img src="./assets/images/HomeBtnGlasses.png" /></a>
+        <nav class="navbar"> <a href="index.html"><img src="./assets/images/HomeBtnGlasses.png" /></a>
 
             <div class="menuContainer">
                 <input type="checkbox" id="toggle">
@@ -40,7 +40,7 @@
                     </li>
                     <li alt="Home">
                         <img src="assets/images/RingThing.png">
-                        <a href="homePage.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                 </ul>
 
@@ -49,17 +49,20 @@
         <div class="main"> 
             <h1 class="header">Great Success!</h1>
             <div class="info">You can now stream the film(s) you've purchased! <br><br>
-            Watch them here or from the <a href="homePage.html">homepage</a>
+            Watch them here or from the <a href="index.html">homepage</a>
             </div>
             <img src="/assets/images/filmCovers/Square_Eyes_Cover8.jpeg" />
             <a class="back" href="filmList.html"><img style="height: 35px; width: 90px; ;" src="/assets/images/BackBtn.png"/></a>
         </div>
         <div class="footer">
-            <div>SoMe Buttons</div>
-            <button class="standardBtn">About</button>
-            <button class="standardBtn">Contact</button>
-            <button class="standardBtn">Back</button>
-            org nr xxxx xxxx xx  (C)2024
+            <!-- Buttons within <a> are not nice for people navigating with keyboard -->
+                <p class="followTxt"><span class="heavy">FOLLOW</span><span> US</span></p>
+                <img class="soMeBtns" src="./assets/images/SoMeButtons.png" />
+                <div class="footerBtns">
+                <a class="footerBtn" href="aboutUs.html">About Us</a>
+                <a class="footerBtn" href="contactUs.html">Contact Us</a>
+                <span>org nr xxxx xxxx xx  (C)2024</span>
+                </div>
         </div>
     </div>  
 </body>

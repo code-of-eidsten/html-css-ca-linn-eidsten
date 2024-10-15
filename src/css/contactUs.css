@@ -18,8 +18,7 @@
     background-repeat: no-repeat;
     background-size:contain;
     width: 350px;
-    padding-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 10%;
 }
 .faqScroll{
     display: flex;
@@ -29,7 +28,7 @@
     scroll-snap-type: y mandatory;
     touch-action: pan-y;
     padding: 7% 10% 5%;
-    height: 200px;
+    height: 230px;
     color: var(--color-secondary)
 }
 
@@ -86,6 +85,7 @@ textarea:focus {
         width: 60%;
         max-width: 700px;
         max-height: 450px;
+        padding-top: 2%;
     }
     .faqScroll{
         height: 90%;
@@ -96,16 +96,16 @@ textarea:focus {
     .askBox{
         height: 80%;
         width: 80%;
+        min-height: 500px;
         max-width: 700px;
         max-height: 450px;
         margin-left: 35%;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px;   
     }
     .askForm{
         height: 40%;
         width: 40%;
-        /*brin it on top of footer*/
+        /*bring it on top of footer*/
         position:absolute;
         z-index: 10;
         max-width: 620px;

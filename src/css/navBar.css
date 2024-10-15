@@ -89,7 +89,7 @@ a {
   margin: auto;
 }
 
-/*Hamburger icon, transforming to cross*/
+/*Hamburger icon*/
 .bar1,
 .bar2,
 .bar3 {
@@ -137,11 +137,9 @@ a {
 }
 
 .genreMenuItems {
-  /* display: fixed; */
   position: absolute;
   top: -15px;
   right: -65px;
-  /* width: 45%; */
   height: auto;
   opacity: 0;
   transform: translateX(100%);

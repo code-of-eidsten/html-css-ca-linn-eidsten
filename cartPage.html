@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar"> <a href="homePage.html"><img src="./assets/images/HomeBtnGlasses.png" /></a>
+        <nav class="navbar"> <a href="index.html"><img src="./assets/images/HomeBtnGlasses.png" /></a>
 
             <div class="menuContainer">
                 <input type="checkbox" id="toggle">
@@ -40,7 +40,7 @@
                     </li>
                     <li alt="Home">
                         <img src="assets/images/RingThing.png">
-                        <a href="homePage.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                 </ul>
 
@@ -69,11 +69,14 @@
             </div>
         </div>
         <div class="footer">
-            <div>SoMe Buttons</div>
-            <button class="standardBtn">About</button>
-            <button class="standardBtn">Contact</button>
-            <button class="standardBtn">Back</button>
-            org nr xxxx xxxx xx  (C)2024
+          <!-- Buttons within <a> are not nice for people navigating with keyboard -->
+            <p class="followTxt"><span class="heavy">FOLLOW</span><span> US</span></p>
+            <img class="soMeBtns" src="./assets/images/SoMeButtons.png" />
+            <div class="footerBtns">
+            <a class="footerBtn" href="aboutUs.html">About Us</a>
+            <a class="footerBtn" href="contactUs.html">Contact Us</a>
+            <span>org nr xxxx xxxx xx  (C)2024</span>
+            </div>
         </div>
     </div>
 </body>
