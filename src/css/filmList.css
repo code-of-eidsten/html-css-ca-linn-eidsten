@@ -98,29 +98,11 @@ body,
   text-align: center;
   width: 150px;
 }
-.navbar {
-  grid-area: nav;
-}
-/*special setting to place menu & dropdown correctly on this page, works on others*/
-.menuBtn {
-  right: 20%;
-}
-.menuItems {
-  display: fixed;
-  position: relative;
-  top: -15px;
-  right: 10%;
-  width: 45%;
-  height: auto;
-  opacity: 0;
-  transform: translateX(100%);
-}
 
 .footer {
   background-image: url(https://i.ibb.co/HTh1zBX/footer-Img-film-List.png);
   background-position: right center;
   background-size: cover;
-  grid-area: footer;
 }
 
 @media (min-width: 900px) {
@@ -208,17 +190,17 @@ body,
   }
 
   /*menus needs tweaking only on this page*/
-  .menuBtn {
+  /* .menuBtn {
     right: 3%;
   }
   .menuItems {
     right: 0%;
-  }
+  } */
 
-  .footer {
+  /* .footer {
     background-position: center;
     background-size: cover;
     padding-top: 20%;
     grid-area: footer;
-  }
+  } */
 }

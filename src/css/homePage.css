@@ -1,5 +1,3 @@
-/* * { border: 1px solid red !important; } */
-
 body,
 html {
   background-color: white;
@@ -28,12 +26,7 @@ body,
   /* background-image: var(--background-img); */
   background-size: cover;
 }
-.navbar {
-  grid-area: nav;
-}
-
 .main {
-  grid-area: main;
   overflow: hidden;
   max-height: 80vh;
   min-width: 100vw;
@@ -53,12 +46,11 @@ body,
 .discoverFilmsBox img {
   height: 70%;
   width: 70%;
-  /* padding-bottom: 20%; */
 }
 
 .purchasedFilms {
-  color: black;
-  -webkit-text-stroke: 0.5px #ede59c;
+  color: var(--color-secondary);
+  -webkit-text-stroke: 0.1px #ede59c;
 }
 
 .footer {
@@ -80,8 +72,6 @@ body,
 .slider > a > img {
   /* fex shrink make sure the width is honored */
   flex-shrink: 0;
-  /* width: 40%;
-    height: auto; */
   margin: 10px;
   border-radius: 25%;
   border: 1px solid #b78841;
@@ -90,7 +80,7 @@ body,
   max-width: 145px;
   z-index: 1;
 }
-/*try to make it good on all screen sizes*/
+/*try to make it ok on all screen sizes*/
 @media (min-width: 394px) {
   .main {
     display: grid;
