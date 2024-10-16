@@ -1,29 +1,6 @@
 * {
   color: var(--color-primary);
-  font-weight: lighter;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body,
-html {
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-body,
-.container,
-.aboutBox,
-.aboutScrollArea {
-  touch-action: none;
-}
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "nav" "main" "footer";
-}
-
 /*filmlistbox needs to be flex  -vertical align items+scrollable, 
 &grid on each filmcard to place elements within*/
 .filmListBox {
@@ -34,7 +11,7 @@ body,
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   touch-action: pan-y;
-  width: 100vw;
+  /* width: 100vw; */
 }
 .filmCard {
   display: grid;
@@ -52,6 +29,7 @@ body,
   width: 360px;
   margin-top: 15px;
   padding-bottom: 30px;
+  margin-left: 10%;
 }
 .filmCard > img {
   height: 199px;
@@ -188,19 +166,4 @@ body,
     margin-left: -20px;
     font-size: 15px;
   }
-
-  /*menus needs tweaking only on this page*/
-  /* .menuBtn {
-    right: 3%;
-  }
-  .menuItems {
-    right: 0%;
-  } */
-
-  /* .footer {
-    background-position: center;
-    background-size: cover;
-    padding-top: 20%;
-    grid-area: footer;
-  } */
 }

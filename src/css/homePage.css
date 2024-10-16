@@ -56,6 +56,7 @@ body,
 .footer {
   grid-area: footer;
   background-color: #ede59c;
+  color: var(--color-secondary);
 }
 
 .slider {

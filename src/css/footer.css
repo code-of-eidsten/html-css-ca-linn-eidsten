@@ -1,8 +1,8 @@
 .footer {
-  grid-area: footer;
   opacity: 0.5;
   text-align: center;
   display: flex;
+  padding-bottom: 0;
 }
 
 .footer > img {
@@ -39,6 +39,28 @@
   flex-direction: column;
   margin-top: 45px;
   margin-left: -210px;
+}
+
+@media (max-width: 900px) {
+  .followTxt {
+    margin-top: 0px;
+  }
+  .soMeBtns {
+    margin-left: -90px;
+    margin-top: 25px;
+  }
+  .footer > img {
+    height: 25%;
+  }
+  .footerBtns {
+    margin-top: 65px;
+    margin-left: -145px;
+  }
+}
+.footerBtn {
+  height: 17px;
+  width: 80px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 1200px) {
