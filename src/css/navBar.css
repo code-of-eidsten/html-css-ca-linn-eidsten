@@ -9,7 +9,7 @@ a {
 
 .navbar > img {
   position: relative;
-  top: 50%;
+  top: 30%;
   max-height: 41px;
 }
 
@@ -22,7 +22,7 @@ a {
 .menuBtn {
   display: flex;
   position: fixed;
-  top: 1%;
+  top: 2%;
   right: 3%;
   text-size-adjust: 100%;
   background-color: #ede59c;
@@ -170,8 +170,15 @@ a {
     left: 50%;
   }
 }
+@media (min-width: 361px) {
+  .menuBtn {
+    right: 15%;
+  }
+}
 
 @media (min-width: 900px) {
+  .menuBtn {
+  }
   .genreMenuContainer {
     position: absolute;
     top: 5%;
