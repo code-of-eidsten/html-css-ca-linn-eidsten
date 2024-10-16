@@ -1,171 +1,179 @@
+.container {
+  background-image: url("https://i.ibb.co/B3Rx2mR/Toy-Story-4.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  /* height: 100%;
+  width: 100%; */
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
+  /*gap: 20px;  Ensure there is space between grid items */
+  border: 1px solid red;
+}
+.filmInfoBox {
+  grid-column: 1 / 13;
+  grid-row: 6 / 10;
+  display: grid;
+  grid-template-columns: repeat(12);
+  grid-template-rows: repeat(12);
+}
+.filmTitle {
+  grid-column: 1 / 8;
+  grid-row: 2/4;
+  font-size: 35px;
+  margin-top: -55px;
+  /*outline for better visibility*/
+  -webkit-text-stroke: 1px var(--color-darker);
+  text-shadow: 1px 2px var(--color-secondary);
+  font-weight: bold;
+  min-width: 170px;
+}
+.director {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  /*outline for better visibility*/
+  -webkit-text-stroke: 0.5px var(--color-darker);
+  text-shadow: 1px 1px var(--color-secondary);
+}
+.runtime {
+  grid-column: 11/13;
+  grid-row: 1/2;
+  /*outline for better visibility*/
+  -webkit-text-stroke: 0.5px var(--color-darker);
+  text-shadow: 1px 1px var(--color-secondary);
+}
+/*where is the footer??*/
+.infotext {
+  grid-column: 1/10;
+  grid-row: 8/11;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+.price {
+  grid-column: 12/12;
+  grid-row: 8/9;
+  /*outline for better visibility*/
+  -webkit-text-stroke: 0.5px var(--color-darker);
+  text-shadow: 1px 1px var(--color-secondary);
+  margin-left: -70px;
+  margin-top: 35px;
+}
+.genres {
+  grid-column: 1/10;
+  grid-row: 11/13;
+  color: lightskyblue;
+  text-align: center;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+.addToCartBtn {
+  grid-column: 11/13;
+  grid-row: 8/10;
+  background-image: url("/assets/images/AddToCartBtn.png");
+  background-size: cover;
+  height: 30px;
+  width: 45px;
+  padding: 20px;
+  margin-left: 45px;
+  margin-top: 25px;
+}
+.backBtn {
+  grid-column: 11/12;
+  grid-row: 9/11;
+  background-color: transparent;
+  margin-top: 25px;
+  margin-right: -10px;
+  height: 30px;
+  width: 75px;
+}
 
-.container{
-    background-image: url("/assets/images/TopImageFilmCover.png");
-    background-position:top;
-    background-repeat: no-repeat;
-    height: 100vh;
+.suggestionsBox {
+  grid-column: 1/13;
+  grid-row: 11/12;
 }
-.main{ 
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(12, 1fr); 
-   height: 100vh;
-   /*gap: 20px;  Ensure there is space between grid items */
-    border:1px solid red;
-
-}
-/* .filmCoverTop{
-   
-    grid-column: 0/13;
-    grid-row: 0/6;
-} */
-.filmInfoBox{
-    grid-column: 1 / 13;
-    grid-row: 6 / 10;
-    display: grid;
-    grid-template-columns: repeat(12);
-    grid-template-rows: repeat(12);
-}
-.filmTitle{
-    grid-column: 1 / 6;
-    grid-row: 1/4;
-    font-size: 35px;
-    margin-top: -55px;
-}
-.director{
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
-.runtime{
-    grid-column:11/13;
-    grid-row: 1/2;
-}
-
-.infotext{
-    grid-column: 1/12;
-    grid-row: 4/7;
-    padding-left: 15px;
-}
-.price{
-    grid-column: 12/13;
-    grid-row: 6/7;
-}
-.genres{
-    grid-column: 1/10;
-    grid-row: 7/9;
-    color:lightskyblue;
-    text-align: center;
-    padding-left: 15px;
-}
-.addToCartBtn{
-    grid-column: 12/13;
-    grid-row: 8/10;
-    background-image: url("/assets/images/AddToCartBtn.png");
-    background-size: cover;
-    height: 30px;
-    width: 45px;
-    padding: 20px;
-    margin-left: 15px;
-}
-.backBtn{
-    grid-column: 12/13;
-    grid-row: 9/11;
-    background-color: transparent;
-    margin-top: 25px;
-    height: 30px;
-    width: 75px;
-}
-
-.suggestionsBox{
-    grid-column: 1/13;
-    grid-row: 11/12; 
-}
-.suggestionsScroll{
-     display: flex;
-     aspect-ratio: 16 / 9;
-     overflow-y: hidden;
-     overflow-x: auto;
-     scroll-snap-type: x mandatory;
-     touch-action: pan-x;
+.suggestionsScroll {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  touch-action: pan-x;
 }
 .suggestionsScroll > a > img {
-    flex-shrink: 0;
-    margin: 10px;
-    border-radius: 25%;
-    border: 1px solid #B78841;
-    /*prevent images from getting **really** big on PC screens*/
-    max-height: 180px;
-    max-width: 145px;
-    z-index: 1;
+  flex-shrink: 0;
+  margin: 10px;
+  border-radius: 25%;
+  border: 1px solid #b78841;
+  /*prevent images from getting **really** big on PC screens*/
+  max-height: 180px;
+  max-width: 145px;
+  z-index: 1;
+}
+
+@media (min-width: 400px) {
+  .container {
+    background-image: url("https://i.ibb.co/B3Rx2mR/Toy-Story-4.jpg");
+    background-size: 100vw;
+    max-height: 20vh;
+  }
+  .main {
+    grid-template-columns: repeat(12, minmax(150px, 1fr));
+    grid-template-rows: repeat(12, minmax(50px, 1fr));
+    /* height: calc(100vh - 300px); Adjust height based on layout */
   }
 
-.footer{
-    
-    
-}
-@media(min-width: 400px){
-  
-.container{
-    background-image: url("/assets/images/Toy-Story-4.jpg");
-    background-size: 100vw ; 
-    max-height: 20vh;
-}  
-.main{ 
-    grid-template-columns: repeat(12, minmax(150px, 1fr));
-    grid-template-rows: repeat(12,  minmax(50px, 1fr));
-    /* height: calc(100vh - 300px); Adjust height based on layout */
-
-} 
-
-.filmInfoBox{
+  .filmInfoBox {
     grid-column: 1/11;
     grid-row: 3/8;
-    min-height:800px;
+    min-height: 800px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, minmax(50px, 1fr));
     /*overflow: visible;  Check if content is pushing out of its grid row */
-}
- 
-.filmTitle{
+  }
+
+  .filmTitle {
     grid-column: 1/6;
     grid-row: 1/6;
     font-size: 60px;
     margin-top: -60px;
-}
-.director{
+  }
+  .director {
     grid-column: 1/2.5;
     grid-row: 1/2;
     font-size: x-large;
     margin-left: 10px;
-}
-.runtime{
-    grid-column:2/3;
+  }
+  .runtime {
+    grid-column: 2/3;
     grid-row: 1/2;
     font-size: x-large;
     margin-left: 20px;
-}
+  }
 
-.infotext{
+  .infotext {
     grid-column: 1/12;
     grid-row: 2/3;
     font-size: larger;
     padding-left: 15px;
-}
-.price{
+  }
+  .price {
     grid-column: 9/10;
     grid-row: 3/4;
     text-align: right;
     font-size: xx-large;
     margin-top: 50px;
-}
-.genres{
+  }
+  .genres {
     grid-column: 3/8;
     grid-row: 4/5;
     /* text-align: center; */
     padding-left: 15px;
-}
- .addToCartBtn{
+  }
+  .addToCartBtn {
     grid-column: 10/11;
     grid-row: 3/4;
     background-image: url("/assets/images/AddToCartBtn.png");
@@ -175,18 +183,17 @@
     padding: 20px;
     margin-left: 25px;
     margin-top: 45px;
-}
-.backBtn{
+  }
+  .backBtn {
     grid-column: 10/11;
     grid-row: 4/5;
     background-color: transparent;
     height: 30px;
     width: 80px;
-}
+  }
 
-.suggestionsBox{
+  .suggestionsBox {
     grid-column: 1/13;
-    grid-row: 9/12; 
-} 
-
+    grid-row: 9/12;
+  }
 }

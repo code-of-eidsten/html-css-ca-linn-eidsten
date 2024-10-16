@@ -2,13 +2,10 @@
 /* This could be colors, fonts, or padding sizes! */
 
 :root {
-  --color-primary: #EDE59C;
+  --color-primary: #ede59c;
   --color-secondary: #373736;
   --color-darker: #b78841;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
   --background-img: url(../../assets/images/QuareEyesPopcornBKG_nologo_1.png);
 }
-
-
-
