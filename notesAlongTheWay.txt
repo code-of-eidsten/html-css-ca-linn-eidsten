@@ -54,3 +54,8 @@ because I've fiddled around so much trying to get the list mousewheel scrollable
 horizontally. 
 I'll make a class in filmList css file to override the navbar class one, since it's
 working on the pther pages (so far...)
+
+background images didn't work on github pages, but worked on netlify... wich uses the same github repo.
+ended up having to upload background images to the web, and then use those links
+to get it to work both locally and on github pages.
+ugh

@@ -45,7 +45,7 @@ body,
     "image director runtime"
     "image price price"
     "image genre genre";
-  background-image: url(/assets/images/blkgold_filmFrame.png);
+  background-image: url("https://i.ibb.co/Cn6dWDH/blkgold-film-Frame.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 215px;
@@ -117,7 +117,7 @@ body,
 }
 
 .footer {
-  background-image: url(/assets/images/footerImg_filmList.png);
+  background-image: url("https://i.ibb.co/HTh1zBX/footer-Img-film-List.png");
   background-position: right center;
   background-size: cover;
   grid-area: footer;
