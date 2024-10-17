@@ -1,81 +1,80 @@
-
-.main{
-    grid-area: main;
-    display: grid;
-    grid-template-areas: 
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
     "header"
     "info"
     "image"
-    "back"
-    ;
-    color: var(--color-primary);
-    margin-left: 20px;
+    "back";
+  color: var(--color-primary);
+  margin-left: 20px;
 }
-.header{
-    grid-area: header;
+.header {
+  grid-area: header;
 }
-.info{
-    grid-area: info;
-    margin-top: -80px;
-    margin-right: 25px;
+.info {
+  grid-area: info;
+  margin-top: -80px;
+  margin-right: 25px;
 }
 .info > a {
-    color: var(--color-primary);
-    text-decoration: underline;
-    font-size: large;
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-size: large;
 }
-.info>a:hover{
-    color: var(--color-secondary);
-    background-color: var(--color-primary);
+.info > a:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
-.main > img{
-    height: 180px;
-    grid-area: image;
-    border: 1px solid #b78841;
-    border-radius: 25%;
-    margin-top: -90px;
-    margin-left: 20px;
+.main > img {
+  height: 180px;
+  grid-area: image;
+  border: 1px solid #b78841;
+  border-radius: 25%;
+  margin-top: -90px;
+  margin-left: 20px;
 }
-.back{
-    grid-area: back;
-    text-align: right;
-    margin-top: -80px;
-    height: fit-content;
-    margin-right: 25px;
+.back {
+  grid-area: back;
+  text-align: right;
+  margin-top: -80px;
+  height: fit-content;
+  margin-right: 25px;
 }
-.footer{
-    grid-area: footer;
-    background-image: url(/assets/images/cartFooterImg.png);
-    background-position: center;
-    background-size: cover;
-    padding-top: 25%;
+.footer {
+  grid-area: footer;
+  background-image: url(/assets/images/cartFooterImg.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 25%;
 }
+/*footer eats content -crowded on android   - add footer bkg*/
 
-@media (min-width: 600px){
-  .main{
+@media (min-width: 600px) {
+  .main {
     padding-left: 30%;
   }
-  .header{
+  .header {
     font-size: 40px;
   }
-  .info{
+  .info {
     font-size: x-large;
     padding-top: 5%;
   }
-  .info > a{
+  .info > a {
     font-size: x-large;
   }
-  .main > img{
+  .main > img {
     margin-top: 5%;
     height: 270px;
   }
-  .back{
+  .back {
     margin-right: 55%;
     margin-top: -17px;
   }
 }
-@media(min-width: 1800px){
-  .footer{
+@media (min-width: 1800px) {
+  .footer {
     padding-top: 21%;
   }
 }
