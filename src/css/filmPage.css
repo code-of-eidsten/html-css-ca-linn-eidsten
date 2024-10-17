@@ -191,6 +191,29 @@
   }
 }
 
+@media (min-width: 600px) {
+  .price {
+    grid-column: 4/5;
+  }
+  .addToCartBtn {
+    grid-column: 5/6;
+  }
+  .backBtn {
+    grid-column: 5/6;
+  }
+}
+@media (min-width: 700px) {
+  .price {
+    grid-column: 5/6;
+  }
+  .addToCartBtn {
+    grid-column: 6/7;
+  }
+  .backBtn {
+    grid-column: 6/7;
+  }
+}
+
 @media (min-width: 950px) {
   .container {
     background-size: 100vw;
