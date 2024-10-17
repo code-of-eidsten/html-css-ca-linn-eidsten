@@ -6,15 +6,12 @@ button {
 button + button {
   margin-left: 10px;
 }
-.navbar {
-  grid-area: nav;
-}
-*{
+
+* {
   /*For some unknown reason, font color from styles.css
   doesn't show up - adding it here*/
   color: var(--color-primary);
 }
-
 .main {
   grid-area: main;
   display: grid;
@@ -39,16 +36,18 @@ button + button {
   text-align: center;
   margin-left: -50px;
   margin-bottom: -20px;
+  padding-bottom: 15px;
 }
 
 .title {
   grid-area: title;
   font-size: x-large;
   text-align: center;
+  padding-bottom: 10px;
 }
 .director {
   grid-area: director;
-  width:max-content;
+  width: max-content;
   margin-top: -80px;
   margin-left: 10px;
 }
@@ -63,16 +62,16 @@ button + button {
   margin-top: -130px;
   color: antiquewhite;
 }
-.quantityTxt{
+.quantityTxt {
   margin-left: 7px;
   color: antiquewhite;
 }
-.quantityBtns{
+.quantityBtns {
   margin-right: -63px;
   margin-top: -23px;
   text-align: right;
 }
-.quantityBtn{
+.quantityBtn {
   width: 20px;
   border-radius: 25%;
 }
@@ -99,59 +98,61 @@ button + button {
 }
 .footer {
   grid-area: footer;
-  background-image: url(/assets/images/cartFooterImg.png);
+  background-image: url("https://i.ibb.co/qscRJmy/cart-Footer-Img.png");
   background-position: center;
   background-size: cover;
   padding-top: 25%;
 }
 
-@media(min-width: 600px){
-  .main{
+@media (min-width: 600px) {
+  .main {
     grid-template-columns: repeat(12, minmax(150px, 1fr));
-    grid-template-rows: repeat(12,  minmax(50px, 1fr))
+    grid-template-rows: repeat(12, minmax(50px, 1fr));
   }
 
-  .infotext{
+  .infotext {
     grid-column: 2 / 6;
     grid-row: 1/2;
     font-size: xx-large;
     margin-top: 50px;
   }
-  .main > img{
+  .main > img {
     grid-column: 2 / 6;
     grid-row: 3/6;
   }
-  .title{
-    grid-column: 3/4;
+  .title {
+    grid-column: 3/5;
     grid-row: 3/4;
     font-size: xx-large;
   }
-  .director{
+  .director {
     grid-column: 3/4;
     grid-row: 5/6;
     margin-top: -60px;
   }
-  .runtime{
+  .runtime {
     grid-column: 4/5;
     grid-row: 5/6;
     margin-top: -60px;
   }
-  .quantity{
+  .quantity {
     grid-column: 3/4;
     grid-row: 7/8;
   }
-  .price{
+  .price {
     grid-column: 4/5;
     grid-row: 7/8;
   }
- 
-  .total{
+
+  .total {
     grid-column: 1/5;
     grid-row: 9/10;
   }
-  .buttons{
+  .buttons {
     grid-column: 4/5;
     grid-row: 9/10;
   }
- 
+  .footer {
+    padding-top: 10%;
+  }
 }
