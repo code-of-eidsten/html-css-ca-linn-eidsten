@@ -65,7 +65,8 @@
 
 @media (min-width: 1200px) {
   .footerBtns {
-    margin-left: -18%;
-    margin-top: 5%;
+    position: absolute;
+    bottom: 40px;
+    left: 230px;
   }
 }

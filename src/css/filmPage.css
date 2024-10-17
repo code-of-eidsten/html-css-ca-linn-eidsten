@@ -7,9 +7,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  height: 100vh;
-  /*gap: 20px;  Ensure there is space between grid items */
-  border: 1px solid red;
+  height: 80vh;
+  max-height: 94%;
 }
 .filmInfoBox {
   grid-column: 1 / 13;
@@ -109,6 +108,11 @@
   max-height: 180px;
   max-width: 145px;
   z-index: 1;
+}
+.footer {
+  background-image: url("https://i.ibb.co/qscRJmy/cart-Footer-Img.png");
+  background-position: center;
+  background-size: 100% 300px;
 }
 
 @media (min-width: 480px) {
@@ -236,10 +240,12 @@
   .infotext {
     grid-column: 2/7;
     grid-row: 2/3;
+    font-size: x-large;
   }
   .genres {
     grid-column: 2/7;
     grid-row: 4/5;
+    font-size: x-large;
   }
   .price {
     grid-column: 7/8;
@@ -260,6 +266,9 @@
 
   .suggestionsBox {
     grid-column: 2/10;
+  }
+  .footer {
+    padding-bottom: 70px;
   }
 }
 
