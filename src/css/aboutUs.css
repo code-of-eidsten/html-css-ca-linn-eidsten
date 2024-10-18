@@ -3,35 +3,23 @@
   font-weight: bolder;
   color: aliceblue;
 }
-/* .container{
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-        "nav" 
-        "main" 
-        "footer"
-    ;
-} */
-
-.navbar {
-  grid-area: nav;
-}
 
 .main {
-  grid-area: main;
-  overflow: hidden;
+  overflow: scroll;
   max-height: 80vh;
   min-width: 100vw;
 }
-
+/*
+  1. bottom box cut of on android (a bit less on iPhone)
+  2. content leaks out of boxes in devicemode from 500px to... well. all the way
+  3. Lots of sizing issues really.
+  4. Oh - and hide scrollbars & add footer image:)
+*/
 .aboutBox {
-  background-image: url(/assets/images/blkgold_filmFrame.png);
+  background-image: url("https://i.ibb.co/rGmQMpP/blkgold-film-Frame.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 11%;
-  /* padding-bottom: 11%; */
 }
 .aboutBox img {
   position: relative;
@@ -43,16 +31,13 @@
   width: 90%;
 }
 .slimText {
-  /* margin-top: 4%; */
   width: 50%;
-  /* margin-right: 5%; */
 }
 .aboutScrollArea {
-  /* padding-left: 5%; */
-  /* padding-bottom: 11%; */
-  background-image: url(/assets/images/blkgold_filmFrame.png);
+  background-image: url("https://i.ibb.co/rGmQMpP/blkgold-film-Frame.png");
   background-position: right center;
   background-size: cover;
+  height: 340px;
 }
 .scrollbox {
   display: flex;
@@ -62,23 +47,19 @@
   touch-action: pan-y;
   padding-left: 10%;
   padding-top: 3%;
-  height: 300px;
+  height: 250px;
   width: 350px;
 }
 
 .scrollableImages > img {
   flex-shrink: 0;
   width: 80%;
-  /* width: 40%;
-    height: auto; */
-  /* margin: 1%; */
 }
 
 .footer {
-  background-image: url(/assets/images/fadeBtmAboutUs.png);
+  background-image: url("https://i.ibb.co/cYdBDXs/fade-Btm-About-Us.png");
   background-position: right center;
   background-size: cover;
-  grid-area: footer;
 }
 
 @media (min-width: 450px) {
