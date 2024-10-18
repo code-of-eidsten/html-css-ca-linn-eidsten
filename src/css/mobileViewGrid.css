@@ -9,6 +9,8 @@ html {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  /*avoid whitespace under footer on smaller screens*/
+  max-height: 100vh;
 }
 
 body,

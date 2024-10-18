@@ -1,3 +1,7 @@
+body,
+html {
+  max-height: 100%;
+}
 .main {
   grid-area: main;
   display: grid;
@@ -14,7 +18,7 @@
 }
 .info {
   grid-area: info;
-  margin-top: -80px;
+  margin-top: -70px;
   margin-right: 25px;
 }
 .info > a {
@@ -31,7 +35,7 @@
   grid-area: image;
   border: 1px solid #b78841;
   border-radius: 25%;
-  margin-top: -90px;
+  margin-top: -5%;
   margin-left: 20px;
 }
 .back {
@@ -43,14 +47,13 @@
 }
 .footer {
   grid-area: footer;
-  background-image: url(/assets/images/cartFooterImg.png);
+  background-image: url("https://i.ibb.co/R0sCjQv/cart-Footer-Img.png");
   background-position: center;
   background-size: cover;
   padding-top: 25%;
 }
-/*footer eats content -crowded on android   - add footer bkg*/
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .main {
     padding-left: 30%;
   }
@@ -69,12 +72,27 @@
     height: 270px;
   }
   .back {
-    margin-right: 55%;
-    margin-top: -17px;
+    margin-right: 40%;
+  }
+  .footer {
+    padding-top: 10%;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width) {
   .footer {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1300px) {
+  /* .footer {
     padding-top: 21%;
+  } */
+  .back {
+    margin-right: 60%;
+  }
+}
+@media (min-width: 1700px) {
+  .back {
+    margin-right: 70%;
   }
 }
