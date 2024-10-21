@@ -111,7 +111,6 @@
     width: 90%;
   }
  
-
   .boxHeadline {
     padding-top: 5%;
     font-size: 27px;
@@ -144,4 +143,42 @@
     background-position: center;
     padding-top: 10%;
   }
+}
+@media(min-width: 1200px){
+  .aboutText {
+    padding-left: 12%;
+    width: 80%;
+    max-width: 520px;
+  }
+  .aboutBox img {
+    left: 55%;
+    top: -10%;
+    height: 25%;
+  }
+  .scrollbox {
+    height: 400px;
+    width: 500px;
+  }
+}
+@media(min-width:1400px){
+  .aboutText {
+    padding-left: 10%;
+    width: 80%;
+    max-width: 500px;
+  }
+  .aboutBox img {
+    left: 50%;
+    top: 4%;
+    height: 25%;
+  }
+  .aboutScrollArea {
+    grid-column: 6/12;
+    grid-row: 2/8;
+    height: 400px;
+  }
+  .scrollableImages > img {
+    margin-left: 10px;
+    width: 80%;
+  }
+ 
 }
