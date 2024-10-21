@@ -136,8 +136,6 @@ textarea:focus {
     }
     /*Footer tweaking*/
     .footerBtns {
-        /* display: flex;
-        flex-direction: column; */
         margin-top: 12%;
         margin-left: -27%;
       }
@@ -147,7 +145,11 @@ textarea:focus {
     .askBox{
         margin-left: 50%;
     }
+    /*FAQ txt out of line!*/
     h3{
         font-size: xx-large;
     }
+    /*Askboxx fields can have more space*/
+
+    /*soMe btns HUGE. Buttons weirdly positioned. FIX!*/
 }
