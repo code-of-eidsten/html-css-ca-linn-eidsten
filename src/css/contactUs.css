@@ -21,6 +21,7 @@ Bigger:
 1. footer bottom disappears - see if possible to avoid scrolling to view it
 2. follow us text disappears into the left voiddd
 3. text in FAQbox to wide - use %
+4. footer some buttons get ENORMOUS - woah
 */
 .faqBox{
     grid-area: faq;
@@ -121,18 +122,25 @@ textarea:focus {
         z-index: 10;
         max-width: 620px;
         max-height: 500px;
+        
     }
 
     .inputBox{
         width: 70%;
         margin-left: 15%;
-        margin-top: 10%;
     }
     .submitBtn{
         width: 70%;
         margin-left: 15%;
+        margin-top: 1%;
     }
-    
+    /*Footer tweaking*/
+    .footerBtns {
+        /* display: flex;
+        flex-direction: column; */
+        margin-top: 12%;
+        margin-left: -27%;
+      }
 }
 
 @media (min-width: 1000px) {
