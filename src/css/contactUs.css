@@ -150,6 +150,10 @@ textarea:focus {
         font-size: xx-large;
     }
     /*Askboxx fields can have more space*/
-
+    .inputBox{
+        width: 70%;
+        height: 20%;
+        margin-left: 15%;
+    }
     /*soMe btns HUGE. Buttons weirdly positioned. FIX!*/
 }
