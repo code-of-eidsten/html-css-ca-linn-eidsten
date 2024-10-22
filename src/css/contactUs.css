@@ -1,37 +1,30 @@
-
- h3, p{
+h3,
+p {
     margin: 0;
- }
- p{
+}
+
+p {
     padding-bottom: 20px;
- }
-.main{
+}
+
+.main {
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "faq"
-    "ask"
+    grid-template-areas:
+        "faq"
+        "ask"
     ;
 }
 
-/*
-Mobile:
-1.footer eats askbox in android, ok in iPhone+ responsive window
-2. FAQbox a bit wider - match questionbox
-Bigger:
-1. footer bottom disappears - see if possible to avoid scrolling to view it
-2. follow us text disappears into the left voiddd
-3. text in FAQbox to wide - use %
-4. footer some buttons get ENORMOUS - woah
-*/
-.faqBox{
+.faqBox {
     grid-area: faq;
     background-image: url("https://i.ibb.co/rFMMqM4/Film-Frame-white-Bg.png");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     width: 390px;
     padding-top: 10%;
 }
-.faqScroll{
+
+.faqScroll {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -43,29 +36,32 @@ Bigger:
     color: var(--color-secondary)
 }
 
-.askBox{
+.askBox {
     color: antiquewhite;
     grid-area: ask;
 }
-.askForm{
+
+.askForm {
     display: flex;
     flex-direction: column;
     background-image: url("https://i.ibb.co/TRbcM1t/Contact-Form-Bkg.png");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     min-width: 350px;
-    min-height: 500px;  
+    min-height: 500px;
 }
-.inputBox{
+
+.inputBox {
     background-color: #E8F1EC;
     border: 0;
     border-bottom: 1px solid var(--color-secondary);
     width: 250px;
     margin-left: 17%;
     margin-top: 20px;
-    resize: none;   
+    resize: none;
 }
-.submitBtn{
+
+.submitBtn {
     width: 250px;
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -73,87 +69,133 @@ Bigger:
     border-radius: 10%;
     margin-left: 17%;
     margin-top: 5%;
-    font-weight:400;
+    font-weight: 400;
     font-size: large;
     box-shadow: 2px 2px 5px lightblue;
 }
+
 input:focus,
 textarea:focus {
-    outline:none;
+    outline: none;
     border-color: transparent;
     border-bottom: 2px solid #b78841;
 }
 
-.footer{
+.footer {
     background-image: url("https://i.ibb.co/Hx0MW1Y/contact-Page-Footer.png");
     background-position: center;
     background-size: cover;
     margin-top: -25%;
 }
 
-@media (min-width: 580px ){
-    .faqBox{
-        height:50%;
+@media (min-width: 580px) {
+    .faqBox {
+        height: 50%;
         width: 60%;
         max-width: 700px;
         max-height: 450px;
         padding-top: 2%;
     }
-    .faqScroll{
+
+    .faqScroll {
         height: 90%;
         padding: 5% 10% 5%;
         max-width: 620px;
         margin-top: 25px;
     }
-    .askBox{
+
+    .askBox {
         height: 80%;
         width: 80%;
         min-height: 500px;
         max-width: 700px;
         max-height: 450px;
         margin-left: 35%;
-        margin-bottom: 10px;   
+        margin-bottom: 10px;
     }
-    .askForm{
+
+    .askForm {
         height: 40%;
         width: 40%;
         /*bring it on top of footer*/
-        position:absolute;
+        position: absolute;
         z-index: 10;
         max-width: 620px;
         max-height: 500px;
-        
+
     }
 
-    .inputBox{
+    .inputBox {
         width: 70%;
         margin-left: 15%;
     }
-    .submitBtn{
+
+    .submitBtn {
         width: 70%;
         margin-left: 15%;
         margin-top: 1%;
     }
+
     /*Footer tweaking*/
+    .followTxt {
+        margin-top: 5%;
+    }
+
+    .soMeBtns {
+        margin-left: -10%;
+        margin-top: 8%;
+    }
+
     .footerBtns {
-        margin-top: 12%;
-        margin-left: -27%;
-      }
+        margin-top: 14%;
+        margin-left: -20%;
+    }
+
+    .footer>img {
+        height: 18%;
+    }
 }
 
 @media (min-width: 1000px) {
-    .askBox{
+    .askBox {
         margin-left: 50%;
     }
-    /*FAQ txt out of line!*/
-    h3{
+    h3 {
         font-size: xx-large;
     }
+
     /*Askboxx fields can have more space*/
-    .inputBox{
-        width: 70%;
-        height: 20%;
-        margin-left: 15%;
+    .inputBox {
+        height: 10%;
     }
-    /*soMe btns HUGE. Buttons weirdly positioned. FIX!*/
+
+    /*Footer tweaking*/
+    .soMeBtns {
+        margin-left: -7%;
+        margin-top: 8%;
+    }
+}
+
+@media (min-width: 1350px){
+     /*Askboxx fields can have more space*/
+     .inputBox {
+        height: 15%;
+    }
+
+    /*Footer tweaking*/
+    .soMeBtns {
+        margin-left: -5%;
+        margin-top: 8%;
+    }
+}
+
+@media(min-width: 1600px){
+    
+    .footer>img {
+        height: 15%;
+    }
+    .soMeBtns {
+        margin-left: -1%;
+        margin-top: 8%;
+    }
 }
