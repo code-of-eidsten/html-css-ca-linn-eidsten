@@ -1,201 +1,205 @@
 h3,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .main {
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "faq"
-        "ask"
-    ;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "faq"
+    "ask";
 }
 
 .faqBox {
-    grid-area: faq;
-    background-image: url("https://i.ibb.co/rFMMqM4/Film-Frame-white-Bg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 390px;
-    padding-top: 10%;
+  grid-area: faq;
+  background-image: url("https://i.ibb.co/rFMMqM4/Film-Frame-white-Bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 390px;
+  padding-top: 10%;
 }
 
 .faqScroll {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-    touch-action: pan-y;
-    padding: 7% 10% 5%;
-    height: 230px;
-    color: var(--color-secondary)
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  touch-action: pan-y;
+  padding: 7% 10% 5%;
+  height: 230px;
+  color: var(--color-secondary);
 }
 
 .askBox {
-    color: antiquewhite;
-    grid-area: ask;
+  color: antiquewhite;
+  grid-area: ask;
 }
 
 .askForm {
-    display: flex;
-    flex-direction: column;
-    background-image: url("https://i.ibb.co/TRbcM1t/Contact-Form-Bkg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-width: 350px;
-    min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://i.ibb.co/TRbcM1t/Contact-Form-Bkg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 350px;
+  min-height: 500px;
 }
 
 .inputBox {
-    background-color: #E8F1EC;
-    border: 0;
-    border-bottom: 1px solid var(--color-secondary);
-    width: 250px;
-    margin-left: 17%;
-    margin-top: 20px;
-    resize: none;
+  background-color: #e8f1ec;
+  border: 0;
+  border-bottom: 1px solid var(--color-secondary);
+  width: 250px;
+  margin-left: 17%;
+  margin-top: 20px;
+  resize: none;
 }
 
 .submitBtn {
-    width: 250px;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    border-bottom: 0;
-    border-radius: 10%;
-    margin-left: 17%;
-    margin-top: 5%;
-    font-weight: 400;
-    font-size: large;
-    box-shadow: 2px 2px 5px lightblue;
+  width: 250px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border-bottom: 0;
+  border-radius: 10%;
+  margin-left: 17%;
+  margin-top: 5%;
+  font-weight: 400;
+  font-size: large;
+  box-shadow: 2px 2px 5px lightblue;
 }
 
 input:focus,
 textarea:focus {
-    outline: none;
-    border-color: transparent;
-    border-bottom: 2px solid #b78841;
+  outline: none;
+  border-color: transparent;
+  border-bottom: 2px solid #b78841;
 }
 
 .footer {
-    background-image: url("https://i.ibb.co/Hx0MW1Y/contact-Page-Footer.png");
-    background-position: center;
-    background-size: cover;
-    margin-top: -25%;
+  background-image: url("https://i.ibb.co/Hx0MW1Y/contact-Page-Footer.png");
+  background-position: center;
+  background-size: cover;
+  margin-top: -25%;
 }
 
 @media (min-width: 580px) {
-    .faqBox {
-        height: 50%;
-        width: 60%;
-        max-width: 700px;
-        max-height: 450px;
-        padding-top: 2%;
-    }
+  .faqBox {
+    height: 50%;
+    width: 60%;
+    max-width: 700px;
+    max-height: 450px;
+    padding-top: 2%;
+  }
 
-    .faqScroll {
-        height: 90%;
-        padding: 5% 10% 5%;
-        max-width: 620px;
-        margin-top: 25px;
-    }
+  .faqScroll {
+    height: 90%;
+    padding: 5% 10% 5%;
+    max-width: 620px;
+    margin-top: 25px;
+  }
 
-    .askBox {
-        height: 80%;
-        width: 80%;
-        min-height: 500px;
-        max-width: 700px;
-        max-height: 450px;
-        margin-left: 35%;
-        margin-bottom: 10px;
-    }
+  .askBox {
+    height: 80%;
+    width: 80%;
+    min-height: 500px;
+    max-width: 700px;
+    max-height: 450px;
+    margin-left: 35%;
+    margin-bottom: 10px;
+  }
 
-    .askForm {
-        height: 40%;
-        width: 40%;
-        /*bring it on top of footer*/
-        position: absolute;
-        z-index: 10;
-        max-width: 620px;
-        max-height: 500px;
+  .askForm {
+    height: 40%;
+    width: 40%;
+    /*bring it on top of footer*/
+    position: absolute;
+    z-index: 10;
+    max-width: 620px;
+    max-height: 500px;
+  }
 
-    }
+  .inputBox {
+    width: 70%;
+    margin-left: 15%;
+  }
 
-    .inputBox {
-        width: 70%;
-        margin-left: 15%;
-    }
+  .submitBtn {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;
+  }
 
-    .submitBtn {
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 1%;
-    }
+  /*Footer tweaking*/
+  .followTxt {
+    margin-top: 5%;
+  }
 
-    /*Footer tweaking*/
-    .followTxt {
-        margin-top: 5%;
-    }
+  .soMeBtns {
+    margin-left: -10%;
+    margin-top: 8%;
+  }
 
-    .soMeBtns {
-        margin-left: -10%;
-        margin-top: 8%;
-    }
+  .footerBtns {
+    margin-top: 14%;
+    margin-left: -20%;
+  }
 
-    .footerBtns {
-        margin-top: 14%;
-        margin-left: -20%;
-    }
-
-    .footer>img {
-        height: 18%;
-    }
+  .footer > img {
+    height: 18%;
+  }
 }
 
 @media (min-width: 1000px) {
-    .askBox {
-        margin-left: 50%;
-    }
-    h3 {
-        font-size: xx-large;
-    }
+  .askBox {
+    margin-left: 50%;
+  }
+  h3 {
+    font-size: xx-large;
+  }
 
-    /*Askboxx fields can have more space*/
-    .inputBox {
-        height: 10%;
-    }
+  /*Askboxx fields can have more space*/
+  .inputBox {
+    height: 10%;
+  }
 
-    /*Footer tweaking*/
-    .soMeBtns {
-        margin-left: -7%;
-        margin-top: 8%;
-    }
+  /*Footer tweaking*/
+  .soMeBtns {
+    margin-left: -7%;
+    margin-top: 8%;
+  }
 }
 
-@media (min-width: 1350px){
-     /*Askboxx fields can have more space*/
-     .inputBox {
-        height: 15%;
-    }
+@media (min-width: 1350px) {
+  /*Askboxx fields can have even more space*/
+  .inputBox {
+    height: 15%;
+  }
 
-    /*Footer tweaking*/
-    .soMeBtns {
-        margin-left: -5%;
-        margin-top: 8%;
-    }
+  /*Footer tweaking*/
+  .soMeBtns {
+    margin-left: -5%;
+    margin-top: 8%;
+  }
 }
 
-@media(min-width: 1600px){
-    
-    .footer>img {
-        height: 15%;
-    }
-    .soMeBtns {
-        margin-left: -1%;
-        margin-top: 8%;
-    }
+@media (min-width: 1600px) {
+  .footer > img {
+    height: 15%;
+  }
+  .followTxt {
+    margin-top: 10.5%;
+  }
+  .soMeBtns {
+    margin-left: -4%;
+    margin-top: 12%;
+  }
+  .footerBtns {
+    margin-top: 16.5%;
+    margin-left: -17.5%;
+  }
 }
