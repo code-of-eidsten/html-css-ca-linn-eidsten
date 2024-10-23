@@ -170,7 +170,7 @@
   .addToCartBtn {
     grid-column: 4/5;
     grid-row: 4/5;
-    background-image: url("/assets/images/AddToCartBtn.png");
+    background-image: url("https://i.ibb.co/V9dFKgM/Add-To-Cart-Btn.png");
     background-size: cover;
     height: 40px;
     width: 55px;

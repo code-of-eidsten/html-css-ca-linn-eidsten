@@ -81,7 +81,7 @@
 }
 
 .footer {
-  background-image: url(https://i.ibb.co/HTh1zBX/footer-Img-film-List.png);
+  background-image: url("https://i.ibb.co/HTh1zBX/footer-Img-film-List.png");
   background-position: right center;
   background-size: cover;
 }
@@ -103,31 +103,12 @@
     width: 100vw;
     height: 50vh;
     margin-top: 120px;
-
-    /*make it possible to scroll with mousewheel
-         - rotate the whole filmlist box
-         - make it horizontal scrollable
-        */
-    /* overflow-y: auto;
-        overflow-x: hidden;
-        transform: rotate(-90deg);
-        transform-origin: right top;
-        scroll-snap-type: x mandatory;
-        touch-action: pan-x; */
-    /*width is now height, and height is the width after flipping it around*/
-    /* width:500px;
-        height:100vh; */
   }
 
   /*Div around each card element gives chance to enlarge background without effing up content!*/
   .filmCard {
     grid-template-rows: repeat(12, minmax(20px, 1fr));
     grid-template-columns: repeat(12, minmax(20px, 1fr));
-    /*mousewheelscroll: then rotate each image so it's the right way*/
-    /* transform: rotate(90deg); */
-    /* transform-origin: right top; */
-    /*too hard. This is a way to do it but I don't have enough time 
-    to make it look ok as well. Sorry for the horizontal scrollbars :(*/
     background-image: url(https://i.ibb.co/r2G5R4P/blkgold-film-Frame-horiz.png);
     background-position: center;
     height: 260px;
@@ -168,5 +149,22 @@
     width: 160px;
     margin-left: -20px;
     font-size: 15px;
+  }
+  .footer {
+    margin-top: -25%;
+  }
+  .footer > img {
+    height: 15%;
+  }
+  .followTxt {
+    margin-top: 10.5%;
+  }
+  .soMeBtns {
+    margin-left: -4%;
+    margin-top: 12%;
+  }
+  .footerBtns {
+    margin-top: 16.5%;
+    margin-left: -17.5%;
   }
 }
