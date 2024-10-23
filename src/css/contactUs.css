@@ -195,7 +195,6 @@ textarea:focus {
 }
 
 @media (min-width: 1350px) {
-  /*Askboxx fields can have even more space*/
   .inputBox {
     height: 15%;
   }
