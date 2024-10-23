@@ -50,14 +50,22 @@ p {
   min-height: 500px;
 }
 
-.inputBox {
+label > .inputBox {
   background-color: #e8f1ec;
   border: 0;
   border-bottom: 1px solid var(--color-secondary);
-  width: 250px;
-  margin-left: 17%;
-  margin-top: 20px;
+  width: 230px;
+  margin-left: 8%;
+  margin-top: 10px;
   resize: none;
+}
+.inputLabel {
+  margin-left: 10%;
+  margin-top: 5%;
+  color: var(--color-secondary);
+}
+label > textarea {
+  height: 20px;
 }
 
 .submitBtn {
@@ -67,13 +75,13 @@ p {
   border-bottom: 0;
   border-radius: 10%;
   margin-left: 17%;
-  margin-top: 5%;
+  margin-top: 1%;
   font-weight: 400;
   font-size: large;
   box-shadow: 2px 2px 5px lightblue;
 }
 
-input:focus,
+label > input:focus,
 textarea:focus {
   outline: none;
   border-color: transparent;
@@ -162,9 +170,21 @@ textarea:focus {
     font-size: xx-large;
   }
 
-  /*Askboxx fields can have more space*/
-  .inputBox {
-    height: 10%;
+  label > .inputBox {
+    width: 65%;
+    margin-left: 8%;
+    padding-top: 17px;
+    resize: none;
+    height: 60%;
+  }
+
+  label > textarea {
+    height: 20px;
+    padding-top: 8%;
+  }
+
+  .submitBtn {
+    margin-left: 10%;
   }
 
   /*Footer tweaking*/
