@@ -84,8 +84,8 @@ label > textarea {
   color: var(--color-secondary);
   border-bottom: 0;
   border-radius: 10%;
-  margin-left: 10%;
-  margin-top: 1%;
+  margin-left: 20%;
+  margin-top: 3%;
   font-weight: 400;
   font-size: large;
   box-shadow: 2px 2px 5px lightblue;
@@ -192,11 +192,6 @@ textarea:focus {
     height: 20px;
     padding-top: 8%;
   }
-
-  .submitBtn {
-    margin-left: 10%;
-  }
-
   /*Footer tweaking*/
   .soMeBtns {
     margin-left: -7%;
