@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Removed the backslashes from metas, imgs, labels and inputs - editor put them back on when I save -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="About Us" />
@@ -28,7 +29,13 @@
 
         <div class="menuContainer">
           <input type="checkbox" id="toggle" />
-          <label alt="Hamburger menu button" class="menuBtn" for="toggle">
+          <!-- !!!!I get a validation error on this!!!! 
+               My reasoning for why I do this:
+              The label needs to be wrapped around the div because it is used to 
+              toggle the menu - and the div is the menubutton. I get errors on other tags as well, 
+              and I can't make the hamburger button look good as a input field :(
+              -->
+          <label class="menuBtn" for="toggle">
             <div class="bars">
               <div class="bar1"></div>
               <div class="bar2"></div>
@@ -38,37 +45,37 @@
           </label>
 
           <ul class="menuItems">
-            <li alt="Films">
+            <li>
               <img
-                alt="A dot for decoration on each menu choice"
+                alt="A dot for decoration on menu option: Films"
                 src="assets/images/RingThing.png"
               />
               <a href="filmList.html">Films</a>
             </li>
-            <li alt="My Cart">
+            <li>
               <img
-                alt="A dot for decoration on each menu choice"
+                alt="A dot for decoration on menu option: My cart"
                 src="assets/images/Cart-vector.png"
               />
               <a href="cartPage.html">My Cart</a>
             </li>
-            <li alt="Contact">
+            <li>
               <img
-                alt="A dot for decoration on each menu choice"
+                alt="A dot for decoration on menu option: Contact"
                 src="assets/images/RingThing.png"
               />
               <a href="contactUs.html">Contact</a>
             </li>
-            <li alt="About">
+            <li>
               <img
-                alt="A dot for decoration on each menu choice"
+                alt="A dot for decoration on menu option: About"
                 src="assets/images/RingThing.png"
               />
               <a href="aboutUs.html">About</a>
             </li>
-            <li alt="Home">
+            <li>
               <img
-                alt="A dot for decoration on each menu choice"
+                alt="A dot for decoration on menu option: Home"
                 src="assets/images/RingThing.png"
               />
               <a href="index.html">Home</a>
