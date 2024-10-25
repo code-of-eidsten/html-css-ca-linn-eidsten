@@ -6,7 +6,17 @@ p {
 p {
   padding-bottom: 20px;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d3d2d23f;
+}
 .main {
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -74,7 +84,7 @@ label > textarea {
   color: var(--color-secondary);
   border-bottom: 0;
   border-radius: 10%;
-  margin-left: 17%;
+  margin-left: 10%;
   margin-top: 1%;
   font-weight: 400;
   font-size: large;
@@ -131,9 +141,9 @@ textarea:focus {
     max-height: 500px;
   }
 
-  .inputBox {
-    width: 70%;
-    margin-left: 15%;
+  label > .inputBox {
+    width: 68%;
+    margin-left: 2%;
   }
 
   .submitBtn {
