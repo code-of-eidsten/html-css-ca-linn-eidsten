@@ -1,86 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Shoppingcart" />
     <meta name="language" content="English" />
-    <meta name="keywords" content="squareeyes, film, films, independent, indie, directors, movie, movies"/>
-    <meta name="description" content="Browse an ever-growing collection of independent films across all genres. Discover fresh voices and unique stories from filmmakers worldwide!"/>
+    <meta
+      name="keywords"
+      content="squareeyes, film, films, independent, indie, directors, movie, movies"
+    />
+    <meta
+      name="description"
+      content="Browse an ever-growing collection of independent films across all genres. Discover fresh voices and unique stories from filmmakers worldwide!"
+    />
     <title>Cart</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/cartPage.css">
-</head>
-<body>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/cartPage.css" />
+  </head>
+  <body>
     <div class="container">
-        <nav class="navbar"> <a href="index.html"><img alt="Homebutton, adored with the glasses SquareEyes logo" src="./assets/images/HomeBtnGlasses.png" /></a>
+      <nav class="navbar">
+        <a href="index.html"
+          ><img
+            alt="Homebutton, adored with the glasses SquareEyes logo"
+            src="./assets/images/HomeBtnGlasses.png"
+        /></a>
 
-            <div class="menuContainer">
-                <input type="checkbox" id="toggle">
-                <label alt="Hamburger menu button" class="menuBtn" for="toggle">
-                    <div class="bars">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </label>
+        <div class="menuContainer">
+          <input type="checkbox" id="toggle" />
+          <label alt="Hamburger menu button" class="menuBtn" for="toggle">
+            <div class="bars">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            ⠀
+          </label>
 
-                <ul class="menuItems">
-                    <li alt="Films">
-                        <img alt="A dot for decoration on each menu choice" src="assets/images/RingThing.png">
-                        <a href="filmList.html">Films</a>
-                    </li>
-                    <li alt="My Cart">
-                        <img alt="A dot for decoration on each menu choice" src="assets/images/Cart-vector.png"/>
-                        <a href="cartPage.html">My Cart</a>
-                    </li>
-                    <li alt="Contact">
-                        <img alt="A dot for decoration on each menu choice" src="assets/images/RingThing.png">
-                        <a href="contactUs.html">Contact</a>
-                    </li>
-                    <li alt="About">
-                        <img alt="A dot for decoration on each menu choice" src="assets/images/RingThing.png">
-                        <a href="aboutUs.html">About</a>
-                    </li>
-                    <li alt="Home">
-                        <img alt="A dot for decoration on each menu choice" src="assets/images/RingThing.png">
-                        <a href="index.html">Home</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-        <div class="main">
-            <p class="infotext">These movies are currently in your cart:</p>
-            <img alt="filmcover of film in shopping cart" src="https://i.ibb.co/D75H307/Square-Eyes-Cover8.jpg"/>
-            <div class="title">Toy Story 4</div>
-            <div class="director">Josh Cooley</div>
-            <div class="runtime">1h 40m</div>
-            <div class="quantity">
-                <div class="quantityTxt">Quantity:</div>
-                <div class="quantityBtns">
-                    <button class="quantityBtn">-</button> 
-                    <span>1</span> 
-                    <button class="quantityBtn">+</button>
-                </div>   
-            </div>
-            <div class="price">$10</div>
-          
-            <div class="total"><span>Total:</span> $10</div>
-            <div class="buttons">
-                <a href="checkoutSuccessPage.html"><img alt="checkout button" src="https://i.ibb.co/G3fx9bP/Checkout-Button.png"/></a>
-                <a href="filmList.html"><img alt="back button" style="height: 35px; width: 90px; margin-left: 50px;" src="https://i.ibb.co/HFbpLyG/BackBtn.png"/></a>
-            </div>
+          <ul class="menuItems">
+            <li alt="Films">
+              <img
+                alt="A dot for decoration on each menu choice"
+                src="assets/images/RingThing.png"
+              />
+              <a href="filmList.html">Films</a>
+            </li>
+            <li alt="My Cart">
+              <img
+                alt="A dot for decoration on each menu choice"
+                src="assets/images/Cart-vector.png"
+              />
+              <a href="cartPage.html">My Cart</a>
+            </li>
+            <li alt="Contact">
+              <img
+                alt="A dot for decoration on each menu choice"
+                src="assets/images/RingThing.png"
+              />
+              <a href="contactUs.html">Contact</a>
+            </li>
+            <li alt="About">
+              <img
+                alt="A dot for decoration on each menu choice"
+                src="assets/images/RingThing.png"
+              />
+              <a href="aboutUs.html">About</a>
+            </li>
+            <li alt="Home">
+              <img
+                alt="A dot for decoration on each menu choice"
+                src="assets/images/RingThing.png"
+              />
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer">
-            <p class="followTxt"><span class="heavy">FOLLOW</span><span> US</span></p>
-            <img class="soMeBtns" alt="Social media buttons" src="./assets/images/SoMeButtons.png" />
-            <div class="footerBtns">
-            <a class="footerBtn" href="aboutUs.html">About Us</a>
-            <a class="footerBtn" href="contactUs.html">Contact Us</a>
-            <span>org nr xxxx xxxx xx  (C)2024</span>
-            </div>
+      </nav>
+      <div class="main">
+        <p class="infotext">These movies are currently in your cart:</p>
+        <img
+          alt="filmcover of film in shopping cart"
+          src="https://i.ibb.co/D75H307/Square-Eyes-Cover8.jpg"
+        />
+        <div class="title">Toy Story 4</div>
+        <div class="director">Josh Cooley</div>
+        <div class="runtime">1h 40m</div>
+        <div class="quantity">
+          <div class="quantityTxt">Quantity:</div>
+          <div class="quantityBtns">
+            <button class="quantityBtn">-</button>
+            <span>1</span>
+            <button class="quantityBtn">+</button>
+          </div>
         </div>
+        <div class="price">$10</div>
+
+        <div class="total"><span>Total:</span> $10</div>
+        <div class="buttons">
+          <a href="checkoutSuccessPage.html"
+            ><img
+              alt="checkout button"
+              src="https://i.ibb.co/G3fx9bP/Checkout-Button.png"
+          /></a>
+          <a href="filmList.html"
+            ><img
+              alt="back button"
+              style="height: 35px; width: 90px; margin-left: 50px"
+              src="https://i.ibb.co/HFbpLyG/BackBtn.png"
+          /></a>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="followTxt">
+          <span class="heavy">FOLLOW</span><span> US</span>
+        </p>
+        <img
+          class="soMeBtns"
+          alt="Social media buttons"
+          src="./assets/images/SoMeButtons.png"
+        />
+        <div class="footerBtns">
+          <a class="footerBtn" href="aboutUs.html">About Us</a>
+          <a class="footerBtn" href="contactUs.html">Contact Us</a>
+          <span>org nr xxxx xxxx xx (C)2024</span>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
