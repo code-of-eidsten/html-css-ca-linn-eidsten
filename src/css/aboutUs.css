@@ -5,17 +5,10 @@
 }
 
 .main {
-  /* overflow: scroll; */
   max-height: 80vh;
   min-width: 100vw;
   max-width: 100%;
 }
-/*
-  1. bottom box cut of on android (a bit less on iPhone)
-  2. content leaks out of boxes in devicemode from 500px to... well. all the way
-  3. Lots of sizing issues really.
-  4. Oh - and hide scrollbars & add footer image:)
-*/
 .aboutBox {
   background-image: url("https://i.ibb.co/rGmQMpP/blkgold-film-Frame.png");
   background-repeat: no-repeat;
