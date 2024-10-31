@@ -155,16 +155,30 @@
   }
   .footer > img {
     height: 15%;
+    max-height: 34px;
   }
   .followTxt {
     margin-top: 10.5%;
   }
   .soMeBtns {
-    margin-left: -4%;
-    margin-top: 12%;
+    margin-left: -75px;
+    margin-top: 14%;
   }
   .footerBtns {
-    margin-top: 16.5%;
-    margin-left: -17.5%;
+    margin-top: 15%;
+    margin-left: 2%;
+  }
+}
+
+/*scrollbar not "eaten" by footer on bigger screens*/
+@media (min-width: 1300px){
+  .footer{
+    margin-top: 0;
+  }
+  .footerBtns{
+    margin-top: 10.5%;
+  }
+  .soMeBtns{
+    margin-top: 12%;
   }
 }
