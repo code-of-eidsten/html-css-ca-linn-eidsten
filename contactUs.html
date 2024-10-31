@@ -29,18 +29,9 @@
 
         <div class="menuContainer">
           <input type="checkbox" id="toggle" />
-          <!-- !!!!I get a validation error on this!!!! 
-           My reasoning for why I do this:
-          The label needs to be wrapped around the div because it is used to 
-          toggle the menu - and the div is the menubutton. I get errors on other tags as well, 
-          and I can't make the hamburger button look good as a input field :(
-          -->
           <label class="menuBtn" for="toggle">
-            <div class="bars">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
+            <!-- Had to use inline style, class didn't apply when on GH pages, only worked locally for some reason -->
+              <img style="height: 30px; width: 35px; margin-left: 8px;" alt="Hamburger menu icon" src="https://i.ibb.co/LkydpRB/hamburger-Icon-Test.png">
             ⠀
           </label>
 
